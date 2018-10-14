@@ -7,15 +7,10 @@ Created on Sun Sep 23 13:03:39 2018
 import logging
 
 import pandas as pd
-import numpy as np  
-from sklearn.cluster import KMeans  
-from IPython import get_ipython
-from sklearn.datasets import load_svmlight_file
-from pandas import ExcelWriter
 import os
 import datetime
 from scipy import sparse
-from sklearn.feature_extraction.text import TfidfTransformer
+
 
 
 def createLogger(directory):

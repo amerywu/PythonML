@@ -54,3 +54,9 @@ def loadTargetMap(directory,dataFile):
     targetMap[['Idx']] = targetMap[['Idx']].apply(pd.to_numeric)
     targetMapSorted=targetMap.sort_values('Idx')
     return(targetMapSorted)
+
+
+def getCurrentWorkingDirectory():
+    import os
+    cwd = os.getcwd()
+    return(str(cwd))
