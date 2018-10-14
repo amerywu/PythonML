@@ -4,13 +4,17 @@ from matplotlib.pyplot import figure, show
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from sklearn.cluster import KMeans
-from IPython import get_ipython
-from sklearn.datasets import load_svmlight_file
 from pandas import ExcelWriter
 import datetime
 from sklearn.feature_extraction.text import TfidfTransformer
 import logging
+
+from sklearn.cluster import KMeans
+from sklearn import metrics
+from scipy.spatial.distance import cdist
+import numpy as np
+import matplotlib.pyplot as plt
+
 
 import dataloader
 import datautils
@@ -18,7 +22,20 @@ import datautils
 #get_ipython().run_line_magic('matplotlib', 'inline')
 import os
 
+def elbow(X,outputDirectory,title,fromCount,toCount):
+    from sklearn.cluster import KMeans
+    from matplotlib import pyplot as plt
+    distorsions = []
+    for k in range(fromCount, toCount):
+        kmeans = KMeans(n_clusters=k)
+        kmeans.fit(X)
+        distorsions.append(kmeans.inertia_)
 
+    fig = plt.figure(figsize=(15, 5))
+    plt.plot(range(fromCount, toCount), distorsions)
+    plt.grid(True)
+    plt.title('Elbow curve')
+    fig.savefig(outputDirectory+"/"+datautils.timeStamped()+title+"_figure.png")
 
 
 #Converts data to TF_IDF

@@ -43,7 +43,7 @@ columnMap=dataloader.loadColumnMap(dataDirectory,dataFile)
 #the loaded target map
 targetMap=dataloader.loadTargetMap(dataDirectory,dataFile)
 
-
+dataprocessing.elbow(data_tuple[0],outputDirectory,"elbow",2,8)
 ###############Run the kmeans and get back a model "kmeanstfidf"
 
 kmeanstfidf=dataprocessing.doKmeans(
