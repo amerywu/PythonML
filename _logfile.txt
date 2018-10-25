@@ -1,0 +1,1962 @@
+2018-10-23 11:53:03,870 - ubc_merm_logger - INFO - \load data
+
+
+2018-10-23 11:53:03,933 - ubc_merm_logger - INFO - X.formatcsr
+2018-10-23 11:53:03,933 - ubc_merm_logger - INFO - X.dtypefloat64
+2018-10-23 11:53:03,933 - ubc_merm_logger - INFO - len(X.indices)125555
+2018-10-23 11:53:03,933 - ubc_merm_logger - INFO - X.ndim2
+2018-10-23 11:53:03,933 - ubc_merm_logger - INFO - X.__len__<bound method spmatrix.__len__ of <2018x6725 sparse matrix of type '<class 'numpy.float64'>'
+	with 125555 stored elements in Compressed Sparse Row format>>
+2018-10-23 11:53:03,933 - ubc_merm_logger - INFO - X[:, 0].shape(2018, 1)
+2018-10-23 11:53:52,852 - ubc_merm_logger - INFO - \load data
+
+
+2018-10-23 11:53:52,914 - ubc_merm_logger - INFO - X.formatcsr
+2018-10-23 11:53:52,914 - ubc_merm_logger - INFO - X.dtypefloat64
+2018-10-23 11:53:52,914 - ubc_merm_logger - INFO - len(X.indices)125555
+2018-10-23 11:53:52,914 - ubc_merm_logger - INFO - X.ndim2
+2018-10-23 11:53:52,914 - ubc_merm_logger - INFO - X.__len__<bound method spmatrix.__len__ of <2018x6725 sparse matrix of type '<class 'numpy.float64'>'
+	with 125555 stored elements in Compressed Sparse Row format>>
+2018-10-23 11:53:52,914 - ubc_merm_logger - INFO - X[:, 0].shape(2018, 1)
+2018-10-23 11:54:46,197 - ubc_merm_logger - INFO - 
+analyze
+
+
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG - [[0.01567647 0.00040636 0.         ... 0.00112655 0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.00151022 0.00072067 0.00084882 ... 0.         0.00012261 0.00059043]
+ ...
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]]
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  inertia: 8030.649084282049
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  init: k-means++
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  labels_: [3 2 3 ... 0 0 2]
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  max_iter: 10
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  params: <bound method BaseEstimator.get_params of KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=10,
+    n_clusters=10, n_init=2, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=1)>
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  tol: 0.0001
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG -  n_init: 2
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,197 - ubc_merm_logger - DEBUG - 0.08029215942028985 col: adj_visual
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.06520220652173912 col: business
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.1722725760869565 col: customer
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.05068347463768116 col: idea
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.06484982608695651 col: interaction
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.07016099637681157 col: interface
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.05344221014492754 col: need
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.07115156159420288 col: prototype
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.06573090942028985 col: research
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.06342137318840581 col: sale
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.07233816304347825 col: service
+2018-10-23 11:54:46,213 - ubc_merm_logger - DEBUG - 0.0790224420289855 col: solution
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.05210770289855071 col: technology
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.05443023550724636 col: ui
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.053253300724637666 col: usability
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.21510023188405808 col: user
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.08287618115942026 col: ux
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.05853766304347827 col: v_design
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.05389021739130436 col: v_use
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.06084082971014491 col: web
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.14546499999999998 col: action
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.12615466666666666 col: activity
+2018-10-23 11:54:46,228 - ubc_merm_logger - DEBUG - 0.17221699999999998 col: ada
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.157991 col: adj_active
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.25427833333333333 col: adj_appropriate
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.10813533333333335 col: adj_as
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.11360633333333332 col: adj_best
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.146381 col: adj_bias-related
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.359634 col: adj_collegial
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.16904733333333333 col: adj_confidential
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.13653566666666664 col: adj_consistent
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.1883716666666667 col: adj_demonstrated
+2018-10-23 11:54:46,244 - ubc_merm_logger - DEBUG - 0.33053499999999997 col: adj_effectively
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.493479 col: adj_higher
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.059946 col: adj_less
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.15035866666666667 col: adj_major
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.190119 col: adj_narrative
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.19247466666666668 col: adj_not
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.145348 col: adj_ongoing
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.124601 col: adj_professional
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.38349133333333335 col: adj_relevant
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.18267599999999998 col: adj_sensitive
+2018-10-23 11:54:46,260 - ubc_merm_logger - DEBUG - 0.3689263333333333 col: adj_shared
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.16179433333333335 col: adj_subject
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.122438 col: adj_supplementary
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.10166666666666667 col: adj_well
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.20416966666666667 col: advocacy
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.212994 col: affirmative
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.15328266666666668 col: assessment
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.212994 col: attentiveness
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.4828156666666667 col: campus
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.140582 col: collaboration
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.29102433333333333 col: college
+2018-10-23 11:54:46,275 - ubc_merm_logger - DEBUG - 0.545706 col: colleges
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.174103 col: commission
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.13465200000000002 col: community
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.16827566666666663 col: conflict
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.07009266666666666 col: detail
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 1.1164023333333333 col: diversity
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.07950633333333333 col: documentation
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.3767713333333333 col: education
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.1762566666666667 col: eeo
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.1874333333333333 col: entity
+2018-10-23 11:54:46,291 - ubc_merm_logger - DEBUG - 0.877561 col: equity
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.06303033333333334 col: excess
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.14609266666666668 col: expert
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.13272599999999998 col: expertise
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.531504 col: governance
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.12614466666666665 col: group
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.146452 col: guidance
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.13293066666666667 col: implementation
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.199846 col: incident
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.7164449999999999 col: inclusion
+2018-10-23 11:54:46,307 - ubc_merm_logger - DEBUG - 0.14418733333333333 col: inclusivity
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.11282766666666666 col: information
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.3732786666666667 col: initiative
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.17676433333333333 col: law
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.24573599999999998 col: leadership
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.10021200000000001 col: material
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.15541366666666667 col: matter
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.19887466666666667 col: official
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.117416 col: opening
+2018-10-23 11:54:46,322 - ubc_merm_logger - DEBUG - 0.11510066666666667 col: opportunity
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.17737533333333333 col: participation
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.22925866666666664 col: plan
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.11833 col: planning
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.27182700000000004 col: policy
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.09015133333333332 col: position
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.2547196666666667 col: pound
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.11076233333333334 col: practice
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.20835366666666666 col: program
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.14236866666666667 col: programming
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.10308066666666667 col: question
+2018-10-23 11:54:46,338 - ubc_merm_logger - DEBUG - 0.151138 col: regulation
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.2591396666666667 col: report
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.13439466666666666 col: resource
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.17226299999999997 col: revision
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.3932086666666667 col: strategic
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.13199766666666665 col: success
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.176625 col: title
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.107724 col: understanding
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.08423599999999999 col: v_apply
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.11499066666666667 col: v_deliver
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.06204833333333334 col: v_distinguish
+2018-10-23 11:54:46,353 - ubc_merm_logger - DEBUG - 0.156349 col: v_expand
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.32639799999999997 col: v_function
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.12662966666666667 col: v_handle
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.16092366666666666 col: v_influence
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.15902266666666667 col: v_initiate
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.1722773333333333 col: v_investigate
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.19719066666666665 col: v_lift
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.058681333333333335 col: v_liftup
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.12047366666666666 col: v_need
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.120908 col: v_oversee
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.17305766666666667 col: v_pertain
+2018-10-23 11:54:46,369 - ubc_merm_logger - DEBUG - 0.123861 col: v_possess
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.11114099999999999 col: v_prepare
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.12692733333333334 col: v_prove
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.156555 col: v_pursue
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.1422743333333333 col: v_respond
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.09733533333333333 col: v_review
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.155095 col: v_seek
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.14545566666666665 col: v_serve
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.14979433333333333 col: v_share
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 0.13645166666666667 col: value
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,385 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.05617168882175228 col: adj_able
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.07529055891238669 col: adj_creative
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.14580173413897285 col: adj_digital
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.07235167975830815 col: adj_graphic
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.05414810271903322 col: adj_new
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.06109016918429 col: adj_proficient
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.06579868580060422 col: adj_social
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.13898129003021154 col: brand
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.057542344410876134 col: campaign
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.057460960725075526 col: content
+2018-10-23 11:54:46,400 - ubc_merm_logger - DEBUG - 0.16854420241691848 col: creative
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.08611483383685802 col: deadline
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.05583563444108764 col: email
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.056487471299093636 col: file
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.06472295468277946 col: graphic
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.06146571903323264 col: html
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.08642606646525679 col: illustrator
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.08150108761329307 col: indesign
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.08442232930513595 col: layout
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.16923621148036253 col: marketing
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.06337890936555889 col: material
+2018-10-23 11:54:46,416 - ubc_merm_logger - DEBUG - 0.09778822960725078 col: media
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.09784045921450155 col: photoshop
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.05360549546827795 col: plus
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.14526384592145014 col: print
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.097180749244713 col: production
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.05153935045317223 col: software
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.09081048640483377 col: suite
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.05614038972809668 col: typography
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.15896002719033234 col: v_design
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.0570259607250755 col: v_meet
+2018-10-23 11:54:46,432 - ubc_merm_logger - DEBUG - 0.10199658610271904 col: web
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.059143957703927476 col: website
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.3569765 col: adj_administrative
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.636296 col: adj_commensurate
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.5889685 col: adj_competitive
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.5565375 col: adj_diverse
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.1793165 col: adj_effectively
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.188088 col: adj_interpersonal
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.641651 col: adj_northwest
+2018-10-23 11:54:46,447 - ubc_merm_logger - DEBUG - 0.3091835 col: adj_oral
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.2884495 col: adj_primarily
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.281614 col: adj_regional
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.7422015 col: adj_supplementary
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.392164 col: adj_undergraduate
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.421484 col: agency
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.3675945 col: commitment
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.42489 col: detail
+2018-10-23 11:54:46,463 - ubc_merm_logger - DEBUG - 0.48195600000000005 col: documentation
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.208535 col: familiarity
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.2111755 col: field
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.3439305 col: indiana
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.307692 col: networking
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.711759 col: opening
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.2849995 col: placement
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.6677885 col: population
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.546483 col: position
+2018-10-23 11:54:46,478 - ubc_merm_logger - DEBUG - 0.613029 col: qualification
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.6248615 col: question
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.307496 col: recruiting
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.218729 col: resource
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.2045385 col: responsibility
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.582425 col: teaching
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.2524325 col: university
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.5106265 col: v_apply
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.248069 col: v_assess
+2018-10-23 11:54:46,494 - ubc_merm_logger - DEBUG - 0.590034 col: v_review
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.3550955 col: v_serve
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.249741 col: v_write
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.414877 col: adj_able
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.687816 col: adj_confidential
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.556538 col: adj_diverse
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.851938 col: art
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.787774 col: dialogue
+2018-10-23 11:54:46,510 - ubc_merm_logger - DEBUG - 0.706787 col: discussion
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.497112 col: email
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.625299 col: example
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.527939 col: field
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.663416 col: history
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.619304 col: impact
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.45907 col: information
+2018-10-23 11:54:46,525 - ubc_merm_logger - DEBUG - 0.562232 col: interest
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 1.214967 col: letter
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 0.680863 col: museum
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 0.662351 col: person
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 0.63437 col: perspective
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 0.624711 col: phone
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 1.196879 col: recommendation
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 0.712479 col: v_contact
+2018-10-23 11:54:46,541 - ubc_merm_logger - DEBUG - 0.672516 col: v_explain
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.704165 col: v_name
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.578721 col: v_offer
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.639286 col: v_submit
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.402354 col: adj_critical
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.529113 col: adj_definite
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.662419 col: adj_effective
+2018-10-23 11:54:46,557 - ubc_merm_logger - DEBUG - 0.331576 col: adj_external
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.583346 col: adj_order-related
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.712961 col: adj_timely
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.288774 col: adj_verbal
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.331723 col: adj_written
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.295371 col: asset
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.419413 col: assistance
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.460716 col: cabinet
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.478323 col: catalogue
+2018-10-23 11:54:46,572 - ubc_merm_logger - DEBUG - 0.251182 col: customer
+2018-10-23 11:54:46,588 - ubc_merm_logger - DEBUG - 1.419995 col: dealer
+2018-10-23 11:54:46,590 - ubc_merm_logger - DEBUG - 0.372899 col: decision
+2018-10-23 11:54:46,593 - ubc_merm_logger - DEBUG - 0.459943 col: follow-up
+2018-10-23 11:54:46,595 - ubc_merm_logger - DEBUG - 0.30033 col: industry
+2018-10-23 11:54:46,597 - ubc_merm_logger - DEBUG - 0.865999 col: inquiry
+2018-10-23 11:54:46,599 - ubc_merm_logger - DEBUG - 0.49919 col: making
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.314916 col: problem
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.301041 col: quality
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 1.566937 col: raywals
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.492881 col: reliability
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.444671 col: reputation
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.373215 col: request
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.312836 col: support
+2018-10-23 11:54:46,600 - ubc_merm_logger - DEBUG - 0.368487 col: thinking
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.292203 col: understanding
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.528695 col: v_assist
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.427877 col: v_convey
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.372514 col: v_interact
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.356786 col: v_multi-task
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.333416 col: v_prioritize
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.385922 col: v_respond
+2018-10-23 11:54:46,616 - ubc_merm_logger - DEBUG - 0.342026 col: v_solve
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 0.407106 col: workload
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 1.064961 col: adj_commercial
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 1.040228 col: adj_relevant
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 0.5319045 col: adj_retail
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 1.070424 col: architecture
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 1.201503 col: bachelor
+2018-10-23 11:54:46,632 - ubc_merm_logger - DEBUG - 1.089525 col: career
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 1.414441 col: construct
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 1.019993 col: degree
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 1.921376 col: interior
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 1.263273 col: v_connect
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 1.253515 col: v_hold
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 1.361132 col: v_progress
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 0.6193605 col: workplace
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,647 - ubc_merm_logger - DEBUG - 0.148613 col: adj_able
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.185302 col: adj_appropriate
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.157604 col: adj_as
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.248417 col: adj_aware
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.237581 col: adj_correct
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.139342 col: adj_digital
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.291509 col: adj_fast-pace
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.217237 col: adj_initial
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.292373 col: adj_new
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.218604 col: adj_previous
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.18745 col: adj_quickly
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 0.234598 col: adj_sound
+2018-10-23 11:54:46,663 - ubc_merm_logger - DEBUG - 1.948936 col: adj_video
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.331982 col: adj_webinar
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.148176 col: adj_well
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.181211 col: animation
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.165166 col: application
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.292197 col: arc
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.195063 col: aspect
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.166906 col: attention
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.296336 col: canon
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.210962 col: cloud
+2018-10-23 11:54:46,678 - ubc_merm_logger - DEBUG - 0.648046 col: content
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.208875 col: coordination
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.257911 col: demo
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.277212 col: demonstration
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.152199 col: detail
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.234765 col: distribution
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.17895 col: editing
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.204309 col: effort
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.506651 col: error
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.234368 col: facebook
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.2116 col: flow
+2018-10-23 11:54:46,694 - ubc_merm_logger - DEBUG - 0.154602 col: idea
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.282071 col: iii
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.208068 col: lighting
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.331982 col: live
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.424256 col: location
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.270376 col: mark
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.273317 col: name
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.286636 col: pacing
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.234095 col: party
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.211543 col: player
+2018-10-23 11:54:46,710 - ubc_merm_logger - DEBUG - 0.161448 col: plus
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.237143 col: premier
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.27932 col: production
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.291504 col: recording
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.274806 col: reel
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.199219 col: review
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.223382 col: screen
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.220031 col: story
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.242208 col: storytelling
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.16719 col: strategy
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.189261 col: studio
+2018-10-23 11:54:46,725 - ubc_merm_logger - DEBUG - 0.259245 col: suggestion
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.152573 col: suite
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.257426 col: title
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.334198 col: trend
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.284003 col: v_appear
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.19121 col: v_complete
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.220118 col: v_direct
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.593936 col: v_film
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.219237 col: v_incorporate
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.704879 col: v_oversee
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.27305 col: v_react
+2018-10-23 11:54:46,741 - ubc_merm_logger - DEBUG - 0.227408 col: v_remain
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.17697 col: word
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.290516 col: accuracy
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.567566 col: adj_accurate
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.396835 col: adj_definite
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.298677 col: adj_detailed
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.751274 col: adj_final
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.232591 col: adj_high
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.246598 col: adj_interior
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.257653 col: adj_oral
+2018-10-23 11:54:46,756 - ubc_merm_logger - DEBUG - 0.316013 col: adj_potential
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.290907 col: adj_present
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.248792 col: adj_written
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.221528 col: asset
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.318345 col: bath
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.346212 col: builder
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.691073 col: cabinet
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.392355 col: clarity
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.269275 col: consumer
+2018-10-23 11:54:46,772 - ubc_merm_logger - DEBUG - 0.423703 col: decorator
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.229928 col: designer
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.26719 col: document
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.740963 col: drawing
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.368002 col: graduate
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.293382 col: kitchen
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.236697 col: level
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.304341 col: manufacturing
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.23416 col: opportunity
+2018-10-23 11:54:46,788 - ubc_merm_logger - DEBUG - 0.752296 col: order
+2018-10-23 11:54:46,804 - ubc_merm_logger - DEBUG - 0.438914 col: ottawa
+2018-10-23 11:54:46,806 - ubc_merm_logger - DEBUG - 0.35596 col: paperwork
+2018-10-23 11:54:46,808 - ubc_merm_logger - DEBUG - 0.237976 col: part
+2018-10-23 11:54:46,810 - ubc_merm_logger - DEBUG - 0.194942 col: production
+2018-10-23 11:54:46,811 - ubc_merm_logger - DEBUG - 0.224531 col: proficiency
+2018-10-23 11:54:46,813 - ubc_merm_logger - DEBUG - 0.211936 col: program
+2018-10-23 11:54:46,815 - ubc_merm_logger - DEBUG - 0.225781 col: quality
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.361154 col: quotation
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.363067 col: referral
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.369661 col: reliability
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.333503 col: reputation
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.434947 col: sale
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.296973 col: showroom
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.211638 col: software
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.321237 col: submission
+2018-10-23 11:54:46,816 - ubc_merm_logger - DEBUG - 0.349693 col: traffic
+2018-10-23 11:54:46,832 - ubc_merm_logger - DEBUG - 0.198261 col: v_assist
+2018-10-23 11:54:46,832 - ubc_merm_logger - DEBUG - 0.352066 col: v_pertain
+2018-10-23 11:54:46,832 - ubc_merm_logger - DEBUG - 0.350456 col: v_place
+2018-10-23 11:54:46,832 - ubc_merm_logger - DEBUG - 0.452207 col: v_prepare
+2018-10-23 11:54:46,832 - ubc_merm_logger - DEBUG - 0.419444 col: walk
+2018-10-23 11:54:46,879 - ubc_merm_logger - DEBUG - Saving to C:/users/jake/Desktop/outputFolder//2018-10-23-11_54_46-879185kmeansOutput.xlsx
+2018-10-23 11:54:46,926 - ubc_merm_logger - INFO - Making centroid plot
+2018-10-23 11:54:47,313 - ubc_merm_logger - INFO - Done making centroid plot
+2018-10-23 11:55:50,671 - ubc_merm_logger - INFO - \load data
+
+
+2018-10-23 11:55:50,717 - ubc_merm_logger - INFO - X.formatcsr
+2018-10-23 11:55:50,717 - ubc_merm_logger - INFO - X.dtypefloat64
+2018-10-23 11:55:50,717 - ubc_merm_logger - INFO - len(X.indices)125555
+2018-10-23 11:55:50,717 - ubc_merm_logger - INFO - X.ndim2
+2018-10-23 11:55:50,717 - ubc_merm_logger - INFO - X.__len__<bound method spmatrix.__len__ of <2018x6725 sparse matrix of type '<class 'numpy.float64'>'
+	with 125555 stored elements in Compressed Sparse Row format>>
+2018-10-23 11:55:50,717 - ubc_merm_logger - INFO - X[:, 0].shape(2018, 1)
+2018-10-23 11:56:29,206 - ubc_merm_logger - INFO - 
+analyze
+
+
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG - [[0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ ...
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.00382337 0.00131716 0.         ... 0.00040591 0.         0.00039415]
+ [0.         0.         0.         ... 0.         0.         0.        ]]
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  inertia: 8024.534247750338
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  init: k-means++
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  labels_: [3 6 5 ... 6 6 6]
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  max_iter: 10
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  params: <bound method BaseEstimator.get_params of KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=10,
+    n_clusters=10, n_init=2, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=1)>
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  tol: 0.0001
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG -  n_init: 2
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG - 0.439978 col: adj_as
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG - 0.808614 col: adj_competent
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG - 0.730509 col: adj_ethical
+2018-10-23 11:56:29,206 - ubc_merm_logger - DEBUG - 0.459834 col: adj_exceptional
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.651097 col: adj_highest
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.635704 col: adj_important
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.476375 col: adj_not
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.722591 col: adj_numerous
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.797486 col: adj_philanthropic
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.506973 col: adj_professional
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.642486 col: adj_right
+2018-10-23 11:56:29,222 - ubc_merm_logger - DEBUG - 0.454442 col: adj_technical
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.568931 col: attitude
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.706979 col: award
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.55201 col: creativity
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.548288 col: culture
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.517276 col: equipment
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.717926 col: intelligence
+2018-10-23 11:56:29,238 - ubc_merm_logger - DEBUG - 0.473394 col: level
+2018-10-23 11:56:29,253 - ubc_merm_logger - DEBUG - 0.523194 col: manner
+2018-10-23 11:56:29,253 - ubc_merm_logger - DEBUG - 0.423872 col: program
+2018-10-23 11:56:29,253 - ubc_merm_logger - DEBUG - 0.578721 col: v_offer
+2018-10-23 11:56:29,253 - ubc_merm_logger - DEBUG - 0.607128 col: v_prefer
+2018-10-23 11:56:29,253 - ubc_merm_logger - DEBUG - 0.591826 col: v_serve
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.168755 col: activity
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.097802 col: adj_administrative
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.443906 col: adj_athletic
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.140539 col: adj_commonly
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.125329 col: adj_developmental
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.099839 col: adj_general
+2018-10-23 11:56:29,269 - ubc_merm_logger - DEBUG - 0.184504 col: adj_individual
+2018-10-23 11:56:29,285 - ubc_merm_logger - DEBUG - 0.078308 col: adj_not
+2018-10-23 11:56:29,287 - ubc_merm_logger - DEBUG - 0.103822 col: adj_physical
+2018-10-23 11:56:29,289 - ubc_merm_logger - DEBUG - 0.101112 col: adj_proper
+2018-10-23 11:56:29,291 - ubc_merm_logger - DEBUG - 0.111131 col: adj_realistic
+2018-10-23 11:56:29,292 - ubc_merm_logger - DEBUG - 0.080455 col: adj_related
+2018-10-23 11:56:29,294 - ubc_merm_logger - DEBUG - 0.094348 col: adj_special
+2018-10-23 11:56:29,296 - ubc_merm_logger - DEBUG - 0.074703 col: adj_technical
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.362291 col: adj_therapeutic
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.131414 col: adult
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.1098 col: capacity
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.100997 col: child
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.099092 col: class
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.139866 col: coach
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.09861 col: collection
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.094472 col: control
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.214847 col: develop
+2018-10-23 11:56:29,297 - ubc_merm_logger - DEBUG - 0.213944 col: disability
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.240322 col: district
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.261907 col: duty
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.085032 col: equipment
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.085699 col: familiarity
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.120337 col: fee
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.093783 col: form
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.081373 col: goal
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.082177 col: guideline
+2018-10-23 11:56:29,313 - ubc_merm_logger - DEBUG - 0.090884 col: health
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.077818 col: level
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.092984 col: maintenance
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.089945 col: method
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.250596 col: park
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.353727 col: participant
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.103842 col: personnel
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.133837 col: play
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.109773 col: population
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.082422 col: principle
+2018-10-23 11:56:29,328 - ubc_merm_logger - DEBUG - 0.139355 col: program
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.105478 col: progress
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.17474 col: record
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.686773 col: recreation
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.147174 col: recruit
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.125146 col: registration
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.101087 col: regulation
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.111714 col: release
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.112416 col: rule
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.097209 col: safety
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.0935 col: supervision
+2018-10-23 11:56:29,344 - ubc_merm_logger - DEBUG - 0.095741 col: teaching
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.162633 col: technique
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.101934 col: theory
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.119215 col: train
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.110862 col: v_accept
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.101946 col: v_assess
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.088083 col: v_assign
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.094469 col: v_conduct
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.230533 col: v_enforce
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.191062 col: v_evaluate
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.076921 col: v_help
+2018-10-23 11:56:29,359 - ubc_merm_logger - DEBUG - 0.083352 col: v_identify
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.086425 col: v_keep
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.091533 col: v_limit
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.122592 col: v_observe
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.155831 col: v_perform
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.184074 col: v_promote
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.110119 col: v_specialize
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.100283 col: v_supervise
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.111017 col: volunteer
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,375 - ubc_merm_logger - DEBUG - 0.189307 col: accuracy
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.13517200000000001 col: adj_able
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.111705 col: adj_advantageous
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.077852 col: adj_also
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.213578 col: adj_beneficial
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.1144735 col: adj_brief
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.21534 col: adj_close
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.0894635 col: adj_competitive
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.1094565 col: adj_comprehensive
+2018-10-23 11:56:29,391 - ubc_merm_logger - DEBUG - 0.1136075 col: adj_constantly
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.2857115 col: adj_consultatively
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.0928425 col: adj_corporate
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.24503 col: adj_demonstrable
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.094037 col: adj_desirable
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.1005315 col: adj_dynamic
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.1460585 col: adj_effectively
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.21966750000000002 col: adj_exceptional
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.1367855 col: adj_frequent
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.1982295 col: adj_graphic
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.151562 col: adj_high
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.1381765 col: adj_internationally
+2018-10-23 11:56:29,406 - ubc_merm_logger - DEBUG - 0.153203 col: adj_interpersonal
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.1158215 col: adj_national
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.0619905 col: adj_new
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.120523 col: adj_north
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.2308135 col: adj_organisational
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.223836 col: adj_pre-press
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.1413485 col: adj_proficient
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.103919 col: adj_strongly
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.3924915 col: adj_such
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.16571599999999997 col: adj_tight
+2018-10-23 11:56:29,422 - ubc_merm_logger - DEBUG - 0.096619 col: advertisement
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.0913835 col: advertising
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.080899 col: artwork
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.15181050000000001 col: attention
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.122953 col: award
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.1265755 col: brand
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.090588 col: brochure
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.0767295 col: budget
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.1477355 col: campaign
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.196761 col: change
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.1150655 col: check
+2018-10-23 11:56:29,438 - ubc_merm_logger - DEBUG - 0.119602 col: choice
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.068701 col: content
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.1329825 col: deadline
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.13843450000000002 col: detail
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.1739025 col: digital
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.1060645 col: discipline
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.11398 col: distribution
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.0755105 col: email
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.097502 col: employee
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.165118 col: event
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.163469 col: execution
+2018-10-23 11:56:29,453 - ubc_merm_logger - DEBUG - 0.174375 col: eye
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.111798 col: graduate
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.14148699999999997 col: illustrator
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.1468365 col: indesign
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.115367 col: info
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.085973 col: innovation
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.0957255 col: junior
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.091317 col: line
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.0925665 col: manager
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.365475 col: marketing
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.0709115 col: material
+2018-10-23 11:56:29,469 - ubc_merm_logger - DEBUG - 0.0642425 col: media
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.111023 col: melbourne
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.1280235 col: members
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.222821 col: need
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.1017455 col: newsletter
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.065349 col: office
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.0878285 col: packaging
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.13204100000000002 col: photoshop
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.083054 col: platform
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.124147 col: potential
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.215695 col: premier
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.0618315 col: print
+2018-10-23 11:56:29,484 - ubc_merm_logger - DEBUG - 0.186252 col: production
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.0905005 col: professional
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.098496 col: proof
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.0907405 col: publication
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.2256565 col: quality
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.0977785 col: quote
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.1870495 col: range
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.0950995 col: resource
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.137908 col: software
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.222605 col: specification
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.082486 col: staff
+2018-10-23 11:56:29,500 - ubc_merm_logger - DEBUG - 0.0918875 col: studio
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.1057405 col: thing
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.063282 col: time
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.224893 col: tool
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.1415985 col: top
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.0708585 col: trend
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.0801965 col: ui
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.0741515 col: ux
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.18942199999999998 col: v_assist
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.14539 col: v_boast
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.1874735 col: v_check
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.152438 col: v_deliver
+2018-10-23 11:56:29,516 - ubc_merm_logger - DEBUG - 0.0864025 col: v_generate
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.099661 col: v_join
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.091435 col: v_keep
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.063946 col: v_meet
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.095335 col: v_mentore
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.074726 col: v_oversee
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.146381 col: v_recognise
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.135269 col: v_respect
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.0949085 col: v_source
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.2188755 col: v_train
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.0624845 col: v_use
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 0.1699675 col: year
+2018-10-23 11:56:29,531 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.058595811846689924 col: adj_able
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.10195518466898953 col: adj_creative
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.1329701045296167 col: adj_digital
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.0673942299651568 col: adj_graphic
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.052194250871080136 col: adj_new
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.06556178048780487 col: adj_proficient
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.06738285017421602 col: adj_social
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.16654379442508724 col: brand
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.056280498257839734 col: campaign
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.05688071080139374 col: content
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.1673188013937283 col: creative
+2018-10-23 11:56:29,547 - ubc_merm_logger - DEBUG - 0.0872053693379791 col: deadline
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.0508528919860627 col: file
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.07079675261324041 col: graphic
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.051949240418118485 col: html
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.08858990243902438 col: illustrator
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.08967956794425089 col: indesign
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.07973695121951219 col: layout
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.17556165156794418 col: marketing
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.06732652264808361 col: material
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.0991681393728223 col: media
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.09498846689895474 col: photoshop
+2018-10-23 11:56:29,563 - ubc_merm_logger - DEBUG - 0.05341905574912891 col: plus
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.05117444947735193 col: presentation
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.1577809756097561 col: print
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.09741594076655052 col: production
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.05016506271777004 col: software
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.052928358885017415 col: standard
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.08873850522648076 col: suite
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.05802998257839723 col: typography
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.08407218118466898 col: v_design
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.060834202090592315 col: v_meet
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.08908942508710803 col: web
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.05722674216027875 col: website
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,578 - ubc_merm_logger - DEBUG - 0.1275203 col: ad
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.07742426666666666 col: adj_as
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.0540495 col: adj_central
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.06448743333333333 col: adj_closely
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.05084829999999999 col: adj_corporate
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.29536120000000005 col: adj_digital
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.06316373333333333 col: adj_direct
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.09392933333333332 col: adj_electronic
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.0803265 col: adj_final
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.22122216666666666 col: adj_graphic
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.06635336666666666 col: adj_related
+2018-10-23 11:56:29,594 - ubc_merm_logger - DEBUG - 0.05039726666666667 col: adj_social
+2018-10-23 11:56:29,610 - ubc_merm_logger - DEBUG - 0.0847189 col: adj_well
+2018-10-23 11:56:29,612 - ubc_merm_logger - DEBUG - 0.0793529 col: advertising
+2018-10-23 11:56:29,613 - ubc_merm_logger - DEBUG - 0.07586966666666667 col: art
+2018-10-23 11:56:29,614 - ubc_merm_logger - DEBUG - 0.0792214 col: asset
+2018-10-23 11:56:29,616 - ubc_merm_logger - DEBUG - 0.09889313333333334 col: campaign
+2018-10-23 11:56:29,617 - ubc_merm_logger - DEBUG - 0.07455166666666667 col: catalog
+2018-10-23 11:56:29,619 - ubc_merm_logger - DEBUG - 0.0733354 col: collateral
+2018-10-23 11:56:29,620 - ubc_merm_logger - DEBUG - 0.08901156666666667 col: color
+2018-10-23 11:56:29,622 - ubc_merm_logger - DEBUG - 0.05747033333333333 col: control
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.058385433333333334 col: creative
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.05767553333333334 col: css
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.0811994 col: deadline
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.05095446666666666 col: detail
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.0963999 col: direction
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.09278836666666666 col: editorial
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.15782783333333333 col: email
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.06077016666666667 col: engine
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.052414 col: event
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.07310873333333334 col: execution
+2018-10-23 11:56:29,623 - ubc_merm_logger - DEBUG - 0.14763113333333333 col: file
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.05248153333333334 col: firm
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.0707889 col: html
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.1475974666666667 col: image
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.11551193333333334 col: layout
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.05736256666666666 col: mac
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.09716953333333334 col: magazine
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.2650251 col: marketing
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.19569323333333336 col: material
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.0794789 col: media
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.06773993333333332 col: page
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.053800733333333337 col: portfolio
+2018-10-23 11:56:29,638 - ubc_merm_logger - DEBUG - 0.15339603333333335 col: print
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.11779046666666666 col: production
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.07718136666666667 col: publication
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.1077942 col: range
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.07012746666666667 col: sale
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.08282643333333334 col: software
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.051924700000000004 col: system
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.0581634 col: v_assign
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.061704566666666676 col: v_attend
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.06484003333333334 col: v_base
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.06763696666666667 col: v_collaborate
+2018-10-23 11:56:29,654 - ubc_merm_logger - DEBUG - 0.1762528 col: v_design
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.1040849 col: v_print
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.0791524 col: v_produce
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.07429993333333333 col: v_reflect
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.06551626666666667 col: v_sketch
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.06017399999999999 col: web
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.051073600000000004 col: website
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.227008 col: adj_basic
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.896809 col: adj_commercial
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.224014 col: adj_mobile
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.265081 col: adj_once
+2018-10-23 11:56:29,670 - ubc_merm_logger - DEBUG - 0.388102 col: adj_organizational
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.255716 col: adj_problem-solving
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.316495 col: adj_recent
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.447919 col: adj_retail
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.391534 col: adj_social
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.267542 col: adj_specifically
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.400369 col: adj_such
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.814308 col: adj_various
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 0.2802 col: aptitude
+2018-10-23 11:56:29,685 - ubc_merm_logger - DEBUG - 1.076132 col: art
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.896985 col: artwork
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.653844 col: boutique
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.212688 col: budget
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.249287 col: college
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.16295 col: creative
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.232425 col: creativity
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.171856 col: deadline
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.568747 col: elevation
+2018-10-23 11:56:29,701 - ubc_merm_logger - DEBUG - 0.309896 col: graduate
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 1.0271 col: hospitality
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.50945 col: ideation
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.182847 col: illustrator
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.18976 col: indesign
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.248621 col: individual
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.581772 col: instagram
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.301236 col: internship
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.593992 col: linkedin
+2018-10-23 11:56:29,716 - ubc_merm_logger - DEBUG - 0.572445 col: luxury
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.426653 col: market
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.356152 col: media
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.247347 col: online
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.206857 col: photography
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.170639 col: photoshop
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.688334 col: pinterest
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.599999 col: placement
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.392759 col: plan
+2018-10-23 11:56:29,732 - ubc_merm_logger - DEBUG - 0.603234 col: platform
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.567236 col: proficiency
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.487803 col: programming
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.248229 col: rendering
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.195982 col: research
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.208456 col: schedule
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.179341 col: suite
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.237811 col: timeline
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.585125 col: twitter
+2018-10-23 11:56:29,748 - ubc_merm_logger - DEBUG - 0.369099 col: understanding
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.265718 col: university
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.333913 col: v_assist
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.26508 col: v_juggle
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.177253 col: v_meet
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 1.05232 col: v_source
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.498833 col: world
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.219652 col: year
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.054017329268292724 col: adj_creative
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 0.07700026164079823 col: user
+2018-10-23 11:56:29,763 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.07307833333333333 col: adj_advantageous
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.11097918518518518 col: adj_also
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.13409977777777776 col: adj_collaborative
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.10448933333333334 col: adj_commercial
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.05024307407407407 col: adj_continually
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.11522933333333334 col: adj_endless
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.06300488888888889 col: adj_extensive
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.06960725925925926 col: adj_further
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.06429307407407407 col: adj_healthy
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.08788518518518516 col: adj_high-end
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.05331062962962963 col: adj_highly
+2018-10-23 11:56:29,779 - ubc_merm_logger - DEBUG - 0.06111911111111112 col: adj_initial
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.18518333333333334 col: adj_multi-residential
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.07845192592592592 col: adj_not
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.05269940740740741 col: adj_on-going
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.10889474074074072 col: adj_particular
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.20493233333333333 col: adj_relevant
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.08496003703703704 col: adj_retail
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.14302618518518515 col: adj_senior
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.07929066666666668 col: architecture
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.08900022222222222 col: bachelor
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.06100833333333334 col: balance
+2018-10-23 11:56:29,795 - ubc_merm_logger - DEBUG - 0.059366703703703706 col: brief
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.17145266666666667 col: career
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.11130159259259258 col: cc
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.17251511111111112 col: completion
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.10477340740740741 col: construct
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.12387611111111113 col: construction
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.07944881481481482 col: creativity
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.3481006296296296 col: cycle
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.24013348148148148 col: da
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.07555503703703703 col: degree
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.17000577777777778 col: delivery
+2018-10-23 11:56:29,810 - ubc_merm_logger - DEBUG - 0.2587593703703704 col: designer
+2018-10-23 11:56:29,827 - ubc_merm_logger - DEBUG - 0.07298340740740741 col: director
+2018-10-23 11:56:29,829 - ubc_merm_logger - DEBUG - 0.314344074074074 col: documentation
+2018-10-23 11:56:29,831 - ubc_merm_logger - DEBUG - 0.18068088888888886 col: e
+2018-10-23 11:56:29,832 - ubc_merm_logger - DEBUG - 0.1275712962962963 col: employee
+2018-10-23 11:56:29,834 - ubc_merm_logger - DEBUG - 0.13172877777777778 col: exposure
+2018-10-23 11:56:29,835 - ubc_merm_logger - DEBUG - 0.19257818518518519 col: ff
+2018-10-23 11:56:29,836 - ubc_merm_logger - DEBUG - 0.18783777777777774 col: firm
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.200684 col: focus
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.09123603703703705 col: guidance
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.06650055555555555 col: hospitality
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.0943605925925926 col: innovation
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.0554588888888889 col: input
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.6957051851851852 col: interior
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.07644492592592593 col: joinery
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.05655585185185185 col: junior
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.1644677037037037 col: leader
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.17059100000000005 col: leadership
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.05924785185185186 col: life
+2018-10-23 11:56:29,838 - ubc_merm_logger - DEBUG - 0.08787592592592593 col: managing
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.07210333333333334 col: member
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.12695214814814815 col: mentor
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.13407214814814813 col: mentorship
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.19262785185185186 col: opportunity
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.19646344444444444 col: ownership
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.1506355925925926 col: package
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.1340494074074074 col: part
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.07933281481481481 col: phase
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.25105055555555555 col: portfolio
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.06928670370370371 col: presentation
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.09586488888888889 col: proficiency
+2018-10-23 11:56:29,854 - ubc_merm_logger - DEBUG - 0.07367022222222222 col: progression
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.13924533333333336 col: revit
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.09372548148148148 col: schedule
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.08055648148148148 col: selection
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.5173657777777778 col: stage
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.1201005185185185 col: submission
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.05855607407407407 col: support
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.10283759259259259 col: v_assist
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.11583425925925926 col: v_build
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.12846922222222223 col: v_challenge
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.09357577777777779 col: v_connect
+2018-10-23 11:56:29,869 - ubc_merm_logger - DEBUG - 0.12037781481481481 col: v_contribute
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.09209992592592592 col: v_coordinate
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.08619755555555556 col: v_deliver
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.06014788888888889 col: v_expand
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.22803714814814816 col: v_experience
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.2033444074074074 col: v_give
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.09285296296296296 col: v_hold
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.27400555555555556 col: v_involve
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.05790381481481482 col: v_lead
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.054954555555555555 col: v_liaise
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.09170096296296297 col: v_limit
+2018-10-23 11:56:29,885 - ubc_merm_logger - DEBUG - 0.08839148148148147 col: v_mentore
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.09148792592592593 col: v_oversee
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.15470370370370373 col: v_progress
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.1121555925925926 col: v_report
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.0701224074074074 col: v_set
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.1084955925925926 col: v_take
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.1542394074074074 col: v_value
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.09187096296296295 col: workplace
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.050442328981723246 col: construction
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.089697181462141 col: customer
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.05924119451697124 col: program
+2018-10-23 11:56:29,901 - ubc_merm_logger - DEBUG - 0.06184984073107047 col: service
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.055046332898172325 col: v_assist
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.492024 col: adj_also
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.665757 col: adj_aware
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.739275 col: adj_fit
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.415835 col: adj_verbal
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.565688 col: approval
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 1.079856 col: board
+2018-10-23 11:56:29,916 - ubc_merm_logger - DEBUG - 0.73227 col: directive
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.705342 col: g
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.652087 col: head
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 1.008138 col: line
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.810847 col: menswear
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.374289 col: production
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.433679 col: requirement
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.490892 col: responsibility
+2018-10-23 11:56:29,932 - ubc_merm_logger - DEBUG - 0.562234 col: session
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 1.178935 col: sheet
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 1.068586 col: store
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 0.463467 col: style
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 0.761321 col: v_assist
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 0.510549 col: v_attend
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 0.605408 col: v_continue
+2018-10-23 11:56:29,947 - ubc_merm_logger - DEBUG - 0.502495 col: v_contribute
+2018-10-23 11:56:29,963 - ubc_merm_logger - DEBUG - 0.690172 col: v_e
+2018-10-23 11:56:29,963 - ubc_merm_logger - DEBUG - 1.055622 col: v_update
+2018-10-23 11:56:29,963 - ubc_merm_logger - DEBUG - 0.399585 col: v_write
+2018-10-23 11:56:29,994 - ubc_merm_logger - DEBUG - Saving to C:/users/jake/Desktop/outputFolder//2018-10-23-11_56_29-994765kmeansOutput.xlsx
+2018-10-23 11:56:30,078 - ubc_merm_logger - INFO - Making centroid plot
+2018-10-23 11:56:30,450 - ubc_merm_logger - INFO - Done making centroid plot
+2018-10-23 11:57:31,729 - ubc_merm_logger - INFO - \load data
+
+
+2018-10-23 11:57:31,790 - ubc_merm_logger - INFO - X.formatcsr
+2018-10-23 11:57:31,790 - ubc_merm_logger - INFO - X.dtypefloat64
+2018-10-23 11:57:31,790 - ubc_merm_logger - INFO - len(X.indices)125555
+2018-10-23 11:57:31,790 - ubc_merm_logger - INFO - X.ndim2
+2018-10-23 11:57:31,790 - ubc_merm_logger - INFO - X.__len__<bound method spmatrix.__len__ of <2018x6725 sparse matrix of type '<class 'numpy.float64'>'
+	with 125555 stored elements in Compressed Sparse Row format>>
+2018-10-23 11:57:31,791 - ubc_merm_logger - INFO - X[:, 0].shape(2018, 1)
+2018-10-23 11:58:17,546 - ubc_merm_logger - INFO - 
+analyze
+
+
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - [[0.01287051 0.         0.         ... 0.         0.         0.        ]
+ [0.00131854 0.00066888 0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ ...
+ [0.00481086 0.0009517  0.00100879 ... 0.00026394 0.00014571 0.0007017 ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]]
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  inertia: 7980.456356113773
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  init: k-means++
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  labels_: [1 1 1 ... 7 7 7]
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  max_iter: 10
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  params: <bound method BaseEstimator.get_params of KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=10,
+    n_clusters=10, n_init=2, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=1)>
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  tol: 0.0001
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG -  n_init: 2
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 0.0526511746031746 col: adj_able
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 0.05852331746031746 col: adj_creative
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 0.08375579365079366 col: adj_digital
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 0.0952224603174603 col: adj_graphic
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 0.06266909523809525 col: adj_more
+2018-10-23 11:58:17,546 - ubc_merm_logger - DEBUG - 0.05882088888888889 col: adj_new
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.0674259365079365 col: adj_proficient
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.05472388888888888 col: adj_verbal
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.062069571428571425 col: art
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.06483 col: brand
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.08284015873015874 col: creative
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.06041384126984126 col: deadline
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.05885444444444444 col: file
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.07168385714285713 col: idea
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.0595838888888889 col: illustrator
+2018-10-23 11:58:17,562 - ubc_merm_logger - DEBUG - 0.05926969841269842 col: indesign
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.05734811111111111 col: interface
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.09030104761904761 col: marketing
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.08115260317460317 col: photoshop
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.05806457142857143 col: plus
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.07076128571428572 col: presentation
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.09298296825396826 col: print
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.08352392063492065 col: production
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.0532987619047619 col: prototype
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.05089668253968255 col: site
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.06363519047619047 col: suite
+2018-10-23 11:58:17,577 - ubc_merm_logger - DEBUG - 0.05304292063492063 col: typography
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.053816349206349194 col: understanding
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.06616993650793651 col: upload
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.08589368253968253 col: user
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.05290457142857143 col: ux
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.9097854603174604 col: v_design
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.05931073015873017 col: v_meet
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.13342877777777779 col: web
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.05133925079872206 col: adj_able
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.0932447364217252 col: adj_creative
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.10341332907348245 col: adj_digital
+2018-10-23 11:58:17,593 - ubc_merm_logger - DEBUG - 0.05559111501597444 col: adj_graphic
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.10360868210862623 col: brand
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.11081224440894571 col: creative
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.07260263099041535 col: deadline
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.051217455271565515 col: graphic
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.0644345447284345 col: illustrator
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.05504743610223645 col: indesign
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.0636766421725239 col: layout
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.11138323322683696 col: marketing
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.053622774760383414 col: material
+2018-10-23 11:58:17,608 - ubc_merm_logger - DEBUG - 0.07157500479233224 col: media
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.07839623482428115 col: photoshop
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.09660228115015974 col: print
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.08811557827476042 col: production
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.06248947923322684 col: suite
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.05003278115015975 col: video
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.06636574121405753 col: web
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.524055 col: adj_able
+2018-10-23 11:58:17,624 - ubc_merm_logger - DEBUG - 0.759782 col: adj_available
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 0.677645 col: adj_highly
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 0.955539 col: adj_punctual
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 1.707904 col: adj_realistic
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 1.587387 col: adj_traditional
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 1.163498 col: construction
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 1.247938 col: drawing
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 1.382307 col: method
+2018-10-23 11:58:17,640 - ubc_merm_logger - DEBUG - 0.97569 col: monday
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 1.751401 col: object
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 1.566863 col: painting
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 1.138631 col: plus
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 0.902848 col: pm
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 1.219651 col: style
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 1.023679 col: sunday
+2018-10-23 11:58:17,655 - ubc_merm_logger - DEBUG - 0.509785 col: upload
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 0.786316 col: v_show
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 1.039212 col: v_use
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 0.13699594405594406 col: adj_interior
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 0.07017160839160841 col: adj_proficient
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 0.050171349650349646 col: adj_relevant
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 0.13922223776223774 col: autocad
+2018-10-23 11:58:17,671 - ubc_merm_logger - DEBUG - 0.09386902797202795 col: building
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.09101154545454548 col: code
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.05226237762237762 col: completion
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.19218719580419583 col: construction
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.0690083006993007 col: cycle
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.050830748251748256 col: delivery
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.08124602097902096 col: designer
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.052194447552447544 col: document
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.1134667902097902 col: documentation
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.11967967132867133 col: drawing
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.07275715384615386 col: e
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.07077637062937063 col: ff
+2018-10-23 11:58:17,686 - ubc_merm_logger - DEBUG - 0.08209651748251746 col: finish
+2018-10-23 11:58:17,703 - ubc_merm_logger - DEBUG - 0.06624927972027972 col: firm
+2018-10-23 11:58:17,705 - ubc_merm_logger - DEBUG - 0.13383070629370633 col: furniture
+2018-10-23 11:58:17,707 - ubc_merm_logger - DEBUG - 0.21356776223776222 col: interior
+2018-10-23 11:58:17,709 - ubc_merm_logger - DEBUG - 0.06865044755244754 col: material
+2018-10-23 11:58:17,710 - ubc_merm_logger - DEBUG - 0.07162600000000001 col: microsoft
+2018-10-23 11:58:17,712 - ubc_merm_logger - DEBUG - 0.08252222377622376 col: office
+2018-10-23 11:58:17,713 - ubc_merm_logger - DEBUG - 0.057462587412587425 col: opportunity
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.05861954545454546 col: photoshop
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.06675644755244753 col: plan
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.07889825874125873 col: planning
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.0732933916083916 col: portfolio
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.06643793006993007 col: presentation
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.07304595104895106 col: proficiency
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.06310507692307692 col: program
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.10514055944055946 col: revit
+2018-10-23 11:58:17,714 - ubc_merm_logger - DEBUG - 0.051781545454545455 col: schedule
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.07902796503496504 col: selection
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.058804650349650336 col: sketchup
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.10324246853146854 col: space
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.09143697202797203 col: specification
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.11080898601398605 col: stage
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.0583098041958042 col: upload
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.08161634965034965 col: v_assist
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.055953391608391606 col: v_involve
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.05361376223776224 col: v_participate
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,730 - ubc_merm_logger - DEBUG - 0.917614 col: acumen
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 0.942326 col: adj_australian
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 0.672607 col: adj_commercial
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 0.580843 col: adj_exceptional
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 0.755633 col: adj_financial
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 2.39135 col: adj_international
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 0.593961 col: adj_interpersonal
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 1.076132 col: art
+2018-10-23 11:58:17,746 - ubc_merm_logger - DEBUG - 0.857382 col: help
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 0.834093 col: landscape
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 1.02179 col: login
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 0.63998 col: market
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 0.608158 col: planning
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 0.698529 col: policy
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 0.856268 col: privacy
+2018-10-23 11:58:17,761 - ubc_merm_logger - DEBUG - 0.97901 col: register
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.690722 col: resource
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.982682 col: v_list
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 1.021921 col: vacancy
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.268941 col: adj_acute
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.318818 col: adj_advanced-level
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.287235 col: adj_ambiguous
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.221432 col: adj_compelling
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.142963 col: adj_creative
+2018-10-23 11:58:17,777 - ubc_merm_logger - DEBUG - 0.438127 col: adj_creatively
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.168109 col: adj_effectively
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.290793 col: adj_expert-level
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.326253 col: adj_graphic
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.19637 col: adj_key
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.233081 col: adj_minimal
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.220808 col: adj_original
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.183479 col: adj_proven
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.239327 col: adj_quick
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.244986 col: adj_schematic
+2018-10-23 11:58:17,792 - ubc_merm_logger - DEBUG - 0.160459 col: adj_visual
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.189705 col: animation
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.249553 col: aptitude
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.174729 col: attention
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.437055 col: brand
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.181019 col: color
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.459446 col: complex
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.169606 col: content
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.191058 col: datum
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.306118 col: deadline
+2018-10-23 11:58:17,808 - ubc_merm_logger - DEBUG - 0.159334 col: detail
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.171412 col: direction
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.374931 col: guideline
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.251422 col: infographic
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.23492 col: keynote
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.253695 col: master
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.349773 col: member
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.233778 col: message
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.167321 col: portfolio
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.1910555 col: powerpoint
+2018-10-23 11:58:17,824 - ubc_merm_logger - DEBUG - 0.771218 col: presentation
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.200226 col: procedure
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.158952 col: program
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.317457 col: software
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.230345 col: story
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.438316 col: template
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.252617 col: theme
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.207274 col: thinking
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.156228 col: time
+2018-10-23 11:58:17,839 - ubc_merm_logger - DEBUG - 0.17654 col: tool
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.151342 col: upload
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.274772 col: v_demand
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.238781 col: v_document
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.434079 col: v_edit
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.211246 col: v_enhance
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.178658 col: v_execute
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.190101 col: v_implement
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.575224 col: v_justify
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.275909 col: v_leverage
+2018-10-23 11:58:17,855 - ubc_merm_logger - DEBUG - 0.157866 col: v_meet
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.200692 col: v_multi-task
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.167026 col: v_produce
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.170343 col: v_take
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.398563 col: v_think
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.201241 col: v_translate
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.206176 col: v_update
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.308516 col: v_use
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.202689 col: v_utilize
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.156088 col: v_write
+2018-10-23 11:58:17,871 - ubc_merm_logger - DEBUG - 0.465626 col: visualization
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.0609745 col: adj_agile
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.271289 col: adj_bcbsmn
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.144344 col: adj_best
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.309101 col: adj_best-in-class
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.060407 col: adj_competitive
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.0691105 col: adj_content
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.078202 col: adj_creative
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.083356 col: adj_digital
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.13328600000000002 col: adj_efficient
+2018-10-23 11:58:17,886 - ubc_merm_logger - DEBUG - 0.062474 col: adj_engaging
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.051369 col: adj_final
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.1922815 col: adj_financial
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.277049 col: adj_front-end
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.069694 col: adj_healthy
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.107614 col: adj_innovative
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.134323 col: adj_intuitive
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.10981350000000001 col: adj_key
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.2231425 col: adj_mobile
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.0855825 col: adj_new
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.096648 col: adj_organizational
+2018-10-23 11:58:17,902 - ubc_merm_logger - DEBUG - 0.0975095 col: adj_political
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.062337 col: adj_present
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.075679 col: adj_regulatory
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.0545545 col: adj_retail
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.06038 col: adj_senior
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.2027845 col: adj_various
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.3345465 col: affiliate
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.0600135 col: analysis
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.0829275 col: analyst
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.14841749999999998 col: appearance
+2018-10-23 11:58:17,917 - ubc_merm_logger - DEBUG - 0.44413400000000003 col: bcbsmn
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.0613485 col: briefs
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.13111299999999998 col: business
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.081649 col: chain
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.059186 col: channel
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.1872275 col: company
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.079779 col: companys
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.28111200000000003 col: consumer
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.062856 col: core
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.0534385 col: day
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.0985405 col: designer
+2018-10-23 11:58:17,933 - ubc_merm_logger - DEBUG - 0.1251235 col: developer
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.1883305 col: device
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.28325049999999996 col: diagram
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.0708885 col: difference
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.2021395 col: documentation
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.084888 col: dynamics
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.297786 col: effectiveness
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.067643 col: engineer
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.355265 col: enterprise
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.055388 col: expertise
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.141101 col: factor
+2018-10-23 11:58:17,949 - ubc_merm_logger - DEBUG - 0.1675725 col: familiarity
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.2477545 col: flow
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.067404 col: framework
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.09746350000000001 col: graphic
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.127176 col: guide
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.104834 col: guideline
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.26830200000000004 col: healthcare
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.090509 col: idea
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.1798465 col: indicator
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.0736335 col: intelligence
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.11790400000000001 col: interest
+2018-10-23 11:58:17,964 - ubc_merm_logger - DEBUG - 0.5906655000000001 col: interface
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.0535265 col: job
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.159785 col: jobs
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.1491545 col: keyword
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.070749 col: landscape
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.11921699999999999 col: leader
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.160532 col: market
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.11945249999999999 col: marketing
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.0681725 col: mock-up
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.1870115 col: need
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.19807249999999998 col: organization
+2018-10-23 11:58:17,980 - ubc_merm_logger - DEBUG - 0.1098435 col: partner
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.116289 col: passion
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.144907 col: password
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.052706 col: people
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.111931 col: performance
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.2848725 col: persona
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.09780749999999999 col: plan
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.300443 col: platform
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.14073 col: practice
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.156573 col: principle
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.070328 col: property
+2018-10-23 11:58:17,996 - ubc_merm_logger - DEBUG - 0.10755200000000001 col: prototype
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.0947345 col: requirement
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.0757435 col: segment
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.090702 col: software
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.1012425 col: style
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.2252545 col: success
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.33239949999999996 col: system
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.098156 col: technology
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.1008795 col: tool
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.14780549999999998 col: trend
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.18266 col: type
+2018-10-23 11:58:18,011 - ubc_merm_logger - DEBUG - 0.4428675 col: ui
+2018-10-23 11:58:18,028 - ubc_merm_logger - DEBUG - 0.1123435 col: usability
+2018-10-23 11:58:18,030 - ubc_merm_logger - DEBUG - 0.846902 col: user
+2018-10-23 11:58:18,032 - ubc_merm_logger - DEBUG - 0.3434575 col: user-experience
+2018-10-23 11:58:18,035 - ubc_merm_logger - DEBUG - 0.195394 col: user-interface
+2018-10-23 11:58:18,037 - ubc_merm_logger - DEBUG - 0.409485 col: ux
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.1423625 col: v_access
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.077321 col: v_anticipate
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.2069755 col: v_assist
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.0981165 col: v_collaborate
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.12146799999999999 col: v_conceptualize
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.065875 col: v_consult
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.1714585 col: v_define
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.0981155 col: v_deliver
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.1056665 col: v_drive
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.164935 col: v_embody
+2018-10-23 11:58:18,040 - ubc_merm_logger - DEBUG - 0.0712455 col: v_emerge
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.1837945 col: v_engage
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.130411 col: v_exceed
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.1119585 col: v_exist
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.1063335 col: v_identify
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.0543145 col: v_implement
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.123194 col: v_integrate
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.10226299999999999 col: v_lead
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.051405 col: v_learn
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.0647195 col: v_live
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.298666 col: v_measure
+2018-10-23 11:58:18,055 - ubc_merm_logger - DEBUG - 0.0882815 col: v_meet
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.185166 col: v_operate
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.126257 col: v_optimize
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.050309 col: v_organize
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.1365115 col: v_represent
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.249324 col: v_search
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.111442 col: v_think
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.08626349999999999 col: v_use
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.168784 col: v_utilize
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.175912 col: value
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.08549999999999999 col: web
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.10016800000000001 col: website
+2018-10-23 11:58:18,071 - ubc_merm_logger - DEBUG - 0.0644075 col: willingness
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.058145 col: wireframe
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.0575255 col: working
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.06792221986417658 col: customer
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.05155931154499153 col: user
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.955085 col: adj_architectural
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.717266 col: adj_effectively
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 1.223694 col: appliance
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 2.107332 col: cabinetry
+2018-10-23 11:58:18,086 - ubc_merm_logger - DEBUG - 0.736882 col: construction
+2018-10-23 11:58:18,104 - ubc_merm_logger - DEBUG - 1.08062 col: elevation
+2018-10-23 11:58:18,108 - ubc_merm_logger - DEBUG - 0.984657 col: floor
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 1.381107 col: idea
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 1.877643 col: kitchen
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 1.014992 col: perspective
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 0.746242 col: plan
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 0.658106 col: presentation
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 0.623814 col: production
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 0.683558 col: v_communicate
+2018-10-23 11:58:18,109 - ubc_merm_logger - DEBUG - 1.041089 col: v_draft
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 0.628612 col: adj_fast-paced
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 0.790027 col: administration
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 1.24252 col: attention
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 1.133041 col: detail
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 1.760157 col: following
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 1.36359 col: responsibility
+2018-10-23 11:58:18,124 - ubc_merm_logger - DEBUG - 0.528695 col: v_assist
+2018-10-23 11:58:18,140 - ubc_merm_logger - DEBUG - 1.336524 col: v_learn
+2018-10-23 11:58:18,140 - ubc_merm_logger - DEBUG - 1.674599 col: willingness
+2018-10-23 11:58:18,171 - ubc_merm_logger - DEBUG - Saving to C:/users/jake/Desktop/outputFolder//2018-10-23-11_58_18-171675kmeansOutput.xlsx
+2018-10-23 11:58:18,234 - ubc_merm_logger - INFO - Making centroid plot
+2018-10-23 11:58:18,624 - ubc_merm_logger - INFO - Done making centroid plot
+2018-10-23 12:07:03,588 - ubc_merm_logger - INFO - \load data
+
+
+2018-10-23 12:07:03,651 - ubc_merm_logger - INFO - X.formatcsr
+2018-10-23 12:07:03,651 - ubc_merm_logger - INFO - X.dtypefloat64
+2018-10-23 12:07:03,651 - ubc_merm_logger - INFO - len(X.indices)125555
+2018-10-23 12:07:03,651 - ubc_merm_logger - INFO - X.ndim2
+2018-10-23 12:07:03,651 - ubc_merm_logger - INFO - X.__len__<bound method spmatrix.__len__ of <2018x6725 sparse matrix of type '<class 'numpy.float64'>'
+	with 125555 stored elements in Compressed Sparse Row format>>
+2018-10-23 12:07:03,651 - ubc_merm_logger - INFO - X[:, 0].shape(2018, 1)
+2018-10-23 12:07:52,505 - ubc_merm_logger - INFO - 
+analyze
+
+
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG - [[0.         0.         0.         ... 0.         0.         0.        ]
+ [0.00364986 0.00048615 0.0004042  ... 0.         0.         0.00048048]
+ [0.00324149 0.00138401 0.00102464 ... 0.         0.00023546 0.00041415]
+ ...
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.0075201  0.         0.         ... 0.00201901 0.         0.        ]]
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  inertia: 7989.120029753893
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  init: k-means++
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  labels_: [1 1 1 ... 1 1 1]
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  max_iter: 10
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  params: <bound method BaseEstimator.get_params of KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=10,
+    n_clusters=10, n_init=2, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=1)>
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  tol: 0.0001
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG -  n_init: 2
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG - 0.14360212500000002 col: adj_as
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG - 0.05592925 col: adj_corporate
+2018-10-23 12:07:52,505 - ubc_merm_logger - DEBUG - 0.1119264375 col: adj_creative
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.051546875 col: adj_current
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.07949625 col: adj_different
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.33094881249999997 col: adj_digital
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.0687143125 col: adj_direct
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.0577140625 col: adj_electronic
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.11909262500000001 col: adj_essential
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.1309678125 col: adj_external
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.095478125 col: adj_extremely
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.059934999999999995 col: adj_fast
+2018-10-23 12:07:52,521 - ubc_merm_logger - DEBUG - 0.07669225 col: adj_foundational
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.062217499999999995 col: adj_full
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.053749 col: adj_graphic
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.0507071875 col: adj_great
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.07375525 col: adj_internal
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.061087062500000004 col: adj_paced
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.110158375 col: adj_social
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.0665211875 col: adj_verbal
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.159546875 col: adj_well
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.11723312500000002 col: advertising
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.0562693125 col: agency
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.10982425 col: asset
+2018-10-23 12:07:52,536 - ubc_merm_logger - DEBUG - 0.068229375 col: atmosphere
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.119643875 col: base
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.29736275 col: brand
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.0501896875 col: cad
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.099509375 col: channel
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.107756875 col: control
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.0587683125 col: creation
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.0778058125 col: css
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.052537 col: delivery
+2018-10-23 12:07:52,552 - ubc_merm_logger - DEBUG - 0.058671875 col: department
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.0690935 col: e
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.083411 col: embroidery
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.059228125 col: engine
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.097047875 col: execution
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.0771824375 col: file
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.0864815625 col: html
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.079088 col: i
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.1043350625 col: identity
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.1495290625 col: layout
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.0638803125 col: machine
+2018-10-23 12:07:52,567 - ubc_merm_logger - DEBUG - 0.0610573125 col: mail
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.12403606249999999 col: market
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.29175843749999997 col: marketing
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.101633375 col: material
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.21650299999999997 col: media
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.07069349999999999 col: member
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.063126625 col: packaging
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.07650287500000001 col: platform
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.0832058125 col: pressure
+2018-10-23 12:07:52,583 - ubc_merm_logger - DEBUG - 0.630157125 col: print
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.303561125 col: production
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.0543061875 col: programming
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.0517239375 col: publication
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.079984125 col: publishing
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.090314625 col: range
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.0586415625 col: relationship
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.06594625 col: requirement
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.058729875 col: sale
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.0668150625 col: screen
+2018-10-23 12:07:52,599 - ubc_merm_logger - DEBUG - 0.0810958125 col: setup
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.0534845 col: software
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.0582478125 col: specification
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.07059125000000001 col: standard
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.1063855 col: supplier
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.0832981875 col: system
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.1087895625 col: technology
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.1418895625 col: time
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.0944770625 col: typography
+2018-10-23 12:07:52,614 - ubc_merm_logger - DEBUG - 0.10761949999999999 col: understanding
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.0540574375 col: v_appear
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.092551 col: v_apply
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.0713123125 col: v_design
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.06660225 col: v_interact
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.0535179375 col: v_multi-task
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.1071368125 col: v_service
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.0723805625 col: v_slice
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.1041588125 col: v_trend
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.061983750000000004 col: variety
+2018-10-23 12:07:52,630 - ubc_merm_logger - DEBUG - 0.0508500625 col: vendor
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.06466525000000001 col: web
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.0782965 col: website
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.06880853205128208 col: adj_creative
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.07059378754578753 col: adj_digital
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.0695353058608059 col: brand
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.07515459615384615 col: creative
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.05086749175824179 col: deadline
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.07329030494505492 col: marketing
+2018-10-23 12:07:52,645 - ubc_merm_logger - DEBUG - 0.05293429304029305 col: photoshop
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.053285083333333316 col: print
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.05868452655677655 col: production
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.06460615750915755 col: user
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.06725456959706955 col: v_design
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.06439529945054953 col: web
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.05780056104252396 col: program
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.05107764197530862 col: v_assist
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 1.030902 col: adj_contemporary
+2018-10-23 12:07:52,661 - ubc_merm_logger - DEBUG - 0.735734 col: adj_exceptional
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 1.702094 col: adj_retail
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 1.06476 col: aptitude
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 0.708891 col: asset
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 2.317967 col: clothing
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 1.080209 col: flyer
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 0.947505 col: location
+2018-10-23 12:07:52,677 - ubc_merm_logger - DEBUG - 1.572115 col: photography
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 1.086664 col: sensitivity
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.845364 col: studio
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.986876 col: treatment
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.92238 col: type
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.771702 col: typography
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.906488 col: visual
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.5666596666666667 col: adj_correctly
+2018-10-23 12:07:52,692 - ubc_merm_logger - DEBUG - 0.3195113333333333 col: adj_creative
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.41711499999999996 col: adj_current
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.5149663333333333 col: adj_future
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.5149516666666667 col: adj_ready
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.14049466666666668 col: agency
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.4463566666666667 col: artwork
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.42335133333333336 col: budget
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.244022 col: bupa
+2018-10-23 12:07:52,708 - ubc_merm_logger - DEBUG - 0.370087 col: company
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.12262833333333334 col: designer
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.829094 col: feedback
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.123936 col: graphic
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.5161396666666667 col: house
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.521324 col: imagery
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.8061210000000001 col: meeting
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.599541 col: pension
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.34115433333333334 col: print
+2018-10-23 12:07:52,724 - ubc_merm_logger - DEBUG - 0.5631646666666666 col: progression
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.41492666666666667 col: schedule
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.390538 col: specification
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.40461433333333335 col: style
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.4617866666666666 col: v_adhere
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.560781 col: v_agree
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.6353776666666667 col: v_archive
+2018-10-23 12:07:52,739 - ubc_merm_logger - DEBUG - 0.445718 col: v_attend
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.44737166666666667 col: v_complete
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.570013 col: v_discuss
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.23629199999999997 col: v_exact
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.392176 col: v_help
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.5320636666666666 col: v_remain
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.387862 col: v_require
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 1.171417 col: adj_able
+2018-10-23 12:07:52,755 - ubc_merm_logger - DEBUG - 0.861487 col: adj_big
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 1.082561 col: adj_european
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 0.929705 col: cabinetry
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 0.755798 col: cad
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 1.362964 col: color
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 0.531915 col: customer
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 0.636294 col: plus
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 0.598408 col: program
+2018-10-23 12:07:52,770 - ubc_merm_logger - DEBUG - 1.534299 col: selection
+2018-10-23 12:07:52,786 - ubc_merm_logger - DEBUG - 0.838513 col: showroom
+2018-10-23 12:07:52,788 - ubc_merm_logger - DEBUG - 0.569759 col: upload
+2018-10-23 12:07:52,790 - ubc_merm_logger - DEBUG - 0.764254 col: use
+2018-10-23 12:07:52,793 - ubc_merm_logger - DEBUG - 1.11959 col: v_assist
+2018-10-23 12:07:52,796 - ubc_merm_logger - DEBUG - 2.233359 col: v_design
+2018-10-23 12:07:52,798 - ubc_merm_logger - DEBUG - 0.660617 col: v_help
+2018-10-23 12:07:52,800 - ubc_merm_logger - DEBUG - 1.342968 col: v_make
+2018-10-23 12:07:52,802 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,802 - ubc_merm_logger - DEBUG - 1.232873 col: adj_endless
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.901443 col: completion
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.946303 col: creativity
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.944594 col: firm
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.970265 col: innovation
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.823447 col: interior
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.85701 col: leadership
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 1.035279 col: mentor
+2018-10-23 12:07:52,805 - ubc_merm_logger - DEBUG - 0.802833 col: opportunity
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.997847 col: ownership
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.815918 col: part
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.964787 col: v_give
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.778709 col: v_take
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 1.085296 col: v_value
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.051283999999999996 col: adj_closely
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.0904613888888889 col: adj_collaborative
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.0720783888888889 col: adj_constantly
+2018-10-23 12:07:52,820 - ubc_merm_logger - DEBUG - 0.0753646111111111 col: adj_continually
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.06038388888888889 col: adj_continued
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.10435105555555556 col: adj_endless
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.050826111111111114 col: adj_entire
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.09450733333333333 col: adj_extensive
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.10441088888888889 col: adj_further
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.09643961111111111 col: adj_healthy
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.05740649999999999 col: adj_heavily
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.09167866666666667 col: adj_initial
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.053997444444444445 col: adj_nearby
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.1176778888888889 col: adj_not
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.07904911111111111 col: adj_on-going
+2018-10-23 12:07:52,836 - ubc_merm_logger - DEBUG - 0.06187166666666667 col: adj_public
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.1694471111111111 col: adj_relevant
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.050154777777777784 col: adj_retail
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.07711666666666667 col: adj_senior
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.061862611111111104 col: adj_unlimited
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.05317911111111111 col: adj_various
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.053247666666666665 col: approach
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.09151250000000001 col: balance
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.08905005555555556 col: brief
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.11269000000000001 col: career
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.16695238888888886 col: cc
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.0984415 col: completion
+2018-10-23 12:07:52,851 - ubc_merm_logger - DEBUG - 0.1858141666666667 col: construction
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.06674711111111112 col: coordination
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.06660083333333335 col: creativity
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.4774422777777778 col: cycle
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.3602002222222222 col: da
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.25500866666666666 col: delivery
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.17958533333333337 col: designer
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.10947511111111112 col: director
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.06633850000000001 col: division
+2018-10-23 12:07:52,867 - ubc_merm_logger - DEBUG - 0.37046633333333334 col: documentation
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.27102133333333334 col: e
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.10974227777777777 col: employee
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.14623072222222222 col: exposure
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.28886727777777776 col: ff
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.20557972222222223 col: firm
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.12098233333333333 col: focus
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.13685405555555558 col: guidance
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.07890155555555556 col: hospitality
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.06828727777777778 col: innovation
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.08318833333333335 col: input
+2018-10-23 12:07:52,883 - ubc_merm_logger - DEBUG - 0.5664790555555556 col: interior
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.08483377777777777 col: junior
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.24670155555555556 col: leader
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.20827483333333335 col: leadership
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.08887177777777779 col: life
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.108155 col: member
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.11226611111111111 col: mentor
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.17848394444444443 col: mentorship
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.12600655555555554 col: opportunity
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.2392592222222222 col: ownership
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.11424999999999999 col: package
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.15574533333333332 col: part
+2018-10-23 12:07:52,898 - ubc_merm_logger - DEBUG - 0.053302944444444444 col: plan
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.24858005555555554 col: portfolio
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.05754566666666667 col: proficiency
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.08160394444444445 col: progression
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.08698644444444444 col: revit
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.1208347222222222 col: selection
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.7349236666666666 col: stage
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.18015077777777774 col: submission
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.08783411111111111 col: support
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.07111933333333334 col: v_assist
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.05447755555555556 col: v_boost
+2018-10-23 12:07:52,914 - ubc_merm_logger - DEBUG - 0.15371694444444445 col: v_build
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.19270383333333335 col: v_challenge
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.18056672222222223 col: v_contribute
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.13814988888888888 col: v_coordinate
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.12929633333333335 col: v_deliver
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.05815305555555556 col: v_encourage
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.06847311111111111 col: v_expand
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.05588327777777777 col: v_expose
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.2514173333333333 col: v_give
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.25370611111111113 col: v_involve
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.06518255555555556 col: v_lead
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.06351305555555556 col: v_liaise
+2018-10-23 12:07:52,930 - ubc_merm_logger - DEBUG - 0.13755144444444445 col: v_limit
+2018-10-23 12:07:52,946 - ubc_merm_logger - DEBUG - 0.13258722222222222 col: v_mentore
+2018-10-23 12:07:52,947 - ubc_merm_logger - DEBUG - 0.07369372222222223 col: v_open
+2018-10-23 12:07:52,948 - ubc_merm_logger - DEBUG - 0.1372318888888889 col: v_oversee
+2018-10-23 12:07:52,950 - ubc_merm_logger - DEBUG - 0.08081866666666666 col: v_progress
+2018-10-23 12:07:52,951 - ubc_merm_logger - DEBUG - 0.12256155555555555 col: v_report
+2018-10-23 12:07:52,953 - ubc_merm_logger - DEBUG - 0.1051836111111111 col: v_set
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.11948177777777778 col: v_take
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.1710648888888889 col: v_value
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.14546499999999998 col: action
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.12615466666666666 col: activity
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.17221699999999998 col: ada
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.157991 col: adj_active
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.25427833333333333 col: adj_appropriate
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.10813533333333335 col: adj_as
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.11360633333333332 col: adj_best
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.146381 col: adj_bias-related
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.359634 col: adj_collegial
+2018-10-23 12:07:52,955 - ubc_merm_logger - DEBUG - 0.16904733333333333 col: adj_confidential
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.13653566666666664 col: adj_consistent
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.1883716666666667 col: adj_demonstrated
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.33053499999999997 col: adj_effectively
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.493479 col: adj_higher
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.059946 col: adj_less
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.15035866666666667 col: adj_major
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.190119 col: adj_narrative
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.19247466666666668 col: adj_not
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.145348 col: adj_ongoing
+2018-10-23 12:07:52,970 - ubc_merm_logger - DEBUG - 0.124601 col: adj_professional
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.38349133333333335 col: adj_relevant
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.18267599999999998 col: adj_sensitive
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.3689263333333333 col: adj_shared
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.16179433333333335 col: adj_subject
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.122438 col: adj_supplementary
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.10166666666666667 col: adj_well
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.20416966666666667 col: advocacy
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.212994 col: affirmative
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.15328266666666668 col: assessment
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.212994 col: attentiveness
+2018-10-23 12:07:52,986 - ubc_merm_logger - DEBUG - 0.4828156666666667 col: campus
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.140582 col: collaboration
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.29102433333333333 col: college
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.545706 col: colleges
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.174103 col: commission
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.13465200000000002 col: community
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.16827566666666663 col: conflict
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.07009266666666666 col: detail
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 1.1164023333333333 col: diversity
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.07950633333333333 col: documentation
+2018-10-23 12:07:53,002 - ubc_merm_logger - DEBUG - 0.3767713333333333 col: education
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.1762566666666667 col: eeo
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.1874333333333333 col: entity
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.877561 col: equity
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.06303033333333334 col: excess
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.14609266666666668 col: expert
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.13272599999999998 col: expertise
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.531504 col: governance
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.12614466666666665 col: group
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.146452 col: guidance
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.13293066666666667 col: implementation
+2018-10-23 12:07:53,017 - ubc_merm_logger - DEBUG - 0.199846 col: incident
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.7164449999999999 col: inclusion
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.14418733333333333 col: inclusivity
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.11282766666666666 col: information
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.3732786666666667 col: initiative
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.17676433333333333 col: law
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.24573599999999998 col: leadership
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.10021200000000001 col: material
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.15541366666666667 col: matter
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.19887466666666667 col: official
+2018-10-23 12:07:53,033 - ubc_merm_logger - DEBUG - 0.117416 col: opening
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.11510066666666667 col: opportunity
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.17737533333333333 col: participation
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.22925866666666664 col: plan
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.11833 col: planning
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.27182700000000004 col: policy
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.09015133333333332 col: position
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.2547196666666667 col: pound
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.11076233333333334 col: practice
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.20835366666666666 col: program
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.14236866666666667 col: programming
+2018-10-23 12:07:53,048 - ubc_merm_logger - DEBUG - 0.10308066666666667 col: question
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.151138 col: regulation
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.2591396666666667 col: report
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.13439466666666666 col: resource
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.17226299999999997 col: revision
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.3932086666666667 col: strategic
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.13199766666666665 col: success
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.176625 col: title
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.107724 col: understanding
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.08423599999999999 col: v_apply
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.11499066666666667 col: v_deliver
+2018-10-23 12:07:53,064 - ubc_merm_logger - DEBUG - 0.06204833333333334 col: v_distinguish
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.156349 col: v_expand
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.32639799999999997 col: v_function
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.12662966666666667 col: v_handle
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.16092366666666666 col: v_influence
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.15902266666666667 col: v_initiate
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.1722773333333333 col: v_investigate
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.19719066666666665 col: v_lift
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.058681333333333335 col: v_liftup
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.12047366666666666 col: v_need
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.120908 col: v_oversee
+2018-10-23 12:07:53,080 - ubc_merm_logger - DEBUG - 0.17305766666666667 col: v_pertain
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.123861 col: v_possess
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.11114099999999999 col: v_prepare
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.12692733333333334 col: v_prove
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.156555 col: v_pursue
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.1422743333333333 col: v_respond
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.09733533333333333 col: v_review
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.155095 col: v_seek
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.14545566666666665 col: v_serve
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.14979433333333333 col: v_share
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.13645166666666667 col: value
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 
+------
+Cluster
+
+
+2018-10-23 12:07:53,095 - ubc_merm_logger - DEBUG - 0.05603236363636365 col: adj_exceptional
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.05099992857142857 col: adj_well
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.07190995454545454 col: business
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.06329856493506494 col: company
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.3699544285714285 col: customer
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.06253628571428571 col: interior
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.052987584415584425 col: kitchen
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.07176366883116883 col: need
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.05605745454545456 col: presentation
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.06515224675324677 col: relationship
+2018-10-23 12:07:53,111 - ubc_merm_logger - DEBUG - 0.20021953246753232 col: sale
+2018-10-23 12:07:53,126 - ubc_merm_logger - DEBUG - 0.14109564285714282 col: service
+2018-10-23 12:07:53,126 - ubc_merm_logger - DEBUG - 0.05038914935064935 col: store
+2018-10-23 12:07:53,126 - ubc_merm_logger - DEBUG - 0.05291378571428572 col: time
+2018-10-23 12:07:53,126 - ubc_merm_logger - DEBUG - 0.05146212987012988 col: v_achieve
+2018-10-23 12:07:53,126 - ubc_merm_logger - DEBUG - 0.055061759740259744 col: v_assist
+2018-10-23 12:07:53,173 - ubc_merm_logger - DEBUG - Saving to C:/users/jake/Desktop/outputFolder//2018-10-23-12_07_53-173825kmeansOutput.xlsx
+2018-10-23 12:07:53,220 - ubc_merm_logger - INFO - Making centroid plot
+2018-10-23 12:07:53,623 - ubc_merm_logger - INFO - Done making centroid plot

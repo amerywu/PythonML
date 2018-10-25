@@ -18,9 +18,9 @@ import os
 
 # Set the important variables for data folder, data name, output folder
 #dataDirectory="C:/Users/jake/Dropbox/Big Data Career/Data/tinysample"
-dataDirectory="Z:/Dropbox/Big Data Career/Data/jd_bydocument/tfidf-2018-10-12_195000_by_45000"
+dataDirectory="Z:/Dropbox/Big Data Career/Data/jd_bydocument/freq-2018-10-14_195000_by_45000"
 #dataFile="fjd201808bysentence_merged"
-dataFile="fjd201808byjob_tfidf_visual arts"
+dataFile="fjd201808byjob_removeHighAndLowFrequency_computer science"
 outputDirectory="C:/users/jake/Desktop/outputFolder/"
 timestamp=datautils.timeStamped()
 datautils.createDirectory(outputDirectory)
@@ -45,34 +45,23 @@ columnMap=dataloader.loadColumnMap(dataDirectory,dataFile)
 #the loaded target map
 targetMap=dataloader.loadTargetMap(dataDirectory,dataFile)
 
-dataprocessing.elbow(data_tuple[0],outputDirectory,"elbow",2,8)
-###############Run the kmeans and get back a model "kmeanstfidf"
 
-kmeanstfidf=dataprocessing.doKmeans(
-        data_tuple[0],
-        clusterCount=10,
-        maxIterations=10,
-        init="k-means++",
-        n_init=2,
-        precompute_distances = 'auto',
-        algorithm = 'auto',
-        verbose=1)
 
 
 logger.info("\n analyze \n\n")
-reportTuple=dataprocessing.filterAndReportResults(kmeanstfidf,columnMap,dataFile,outputDirectory,thresholdForColumnRemoval=0.3, thresholdForReporting=0.05)
-dataprocessing.saveListAsExcel(reportTuple[0],outputDirectory,dataFile,reportTuple[1])
-logger.info("Making centroid plot")
-
-dataprocessing.plotClusterCentroids(kmeanstfidf,outputDirectory)
 
 
+ldaModel=dataprocessing.doLDA(data_tuple[0],
+                              components=10,
+                              maxiter=10,
+                              learningmethod='online',
+                              learningoffset=0,
+                              randomstate=10,
+                              verbose=1)
+resultsTuple=dataprocessing.filterAndReportResultsLDA(ldaModel,columnMap,outputDirectory,"ALL_TARGETS")
+dataprocessing.saveListAsExcel(resultsTuple[0],outputDirectory,dataFile,resultsTuple[1])
 
 
-
-
-
-logger.info("Done making centroid plot")
 ######Important, use these lines of code below at the very end of any script that uses logging########
 
 datautils.closeLogger

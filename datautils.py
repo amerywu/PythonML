@@ -18,12 +18,13 @@ def createLogger(directory):
     if logger.handlers == []:
         logger.setLevel(logging.DEBUG)
         # create file handler which logs even debug messages
-        logfile = directory + "/logfile.txt"
+        logfile = directory + "/pylogfile.txt"
+        print("Logger created: "+logfile)
         fh = logging.FileHandler(logfile)
         fh.setLevel(logging.DEBUG)
         # create console handler with a higher log level
         ch = logging.StreamHandler()
-        ch.setLevel(logging.ERROR)
+        ch.setLevel(logging.DEBUG)
         # create formatter and add it to the handlers
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         fh.setFormatter(formatter)
@@ -33,18 +34,22 @@ def createLogger(directory):
         logger.addHandler(ch)
     return(logger)
     
-def getLogger():
+def log():
+    return(getLogger())
     
+def getLogger():
+
     l=logging.getLogger('ubc_merm_logger')
     if l.handlers == []:
+        print("WARN: Generating ad-hoc logger\nBest to use createLogger() method first so you can specify output directory.")
         l.setLevel(logging.DEBUG)
         # create file handler which logs even debug messages
-        logfile = "logfile.txt"
+        logfile = "_logfile.txt"
         fh = logging.FileHandler(logfile)
         fh.setLevel(logging.DEBUG)
         # create console handler with a higher log level
         ch = logging.StreamHandler()
-        ch.setLevel(logging.ERROR)
+        ch.setLevel(logging.DEBUG)
         # create formatter and add it to the handlers
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         fh.setFormatter(formatter)

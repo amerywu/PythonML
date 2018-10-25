@@ -1,23 +1,23 @@
 
 
 from matplotlib.pyplot import figure, show
-import matplotlib.pyplot as plt
+
+from sklearn.decomposition import NMF, LatentDirichletAllocation
 import pandas as pd
-import numpy as np
+
 from pandas import ExcelWriter
-import datetime
+
 from sklearn.feature_extraction.text import TfidfTransformer
-import logging
+
+from scipy.sparse import coo_matrix
 
 from sklearn.cluster import KMeans
-from sklearn import metrics
-from scipy.spatial.distance import cdist
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 import dataloader
-import datautils
+import datautils as du
 
 #get_ipython().run_line_magic('matplotlib', 'inline')
 import os
@@ -35,7 +35,7 @@ def elbow(X,outputDirectory,title,fromCount,toCount):
     plt.plot(range(fromCount, toCount), distorsions)
     plt.grid(True)
     plt.title('Elbow curve')
-    fig.savefig(outputDirectory+"/"+datautils.timeStamped()+title+"_figure.png")
+    fig.savefig(outputDirectory+"/"+du.timeStamped()+title+"_figure.png")
 
 
 #Converts data to TF_IDF
@@ -43,6 +43,48 @@ def convertToTfIdf(X):
      transformer = TfidfTransformer()
      transformedX=transformer.fit_transform(X)
      return(transformedX)
+
+
+
+def doLDA(X,
+          components=10,
+          maxiter=500,
+          learningmethod='online',
+          learningoffset=0,
+          randomstate=10,
+          verbose=1):
+     model = LatentDirichletAllocation(n_components=components,
+                                       max_iter=maxiter,
+                                       learning_method=learningmethod,
+                                       learning_offset=learningoffset,
+                                       random_state=randomstate,
+                                       verbose=verbose).fit(X)
+
+     return model
+
+def filterAndReportResultsLDA(model,cmap,outputDirectory,target):
+
+
+     listOfWordsByTopic = []
+     n_top_words = 10
+     for topic, comp in enumerate(model.components_):
+         du.getLogger().debug("topic "+str(topic))
+         du.getLogger().debug("comp " + str(comp))
+
+         word_idx = np.argsort(comp)[::-1][:n_top_words]
+         du.getLogger().debug(str(topic)+"word_idx" + str(word_idx))
+
+
+         for i in word_idx:
+             listOfWordsByTopic.append([topic, du.getTermByIdx(cmap,(i+1)), comp[i]])
+
+     for i, (topic, term, value) in enumerate(listOfWordsByTopic):
+         du.log().debug("topic "+str(topic)+" term "+str(term)+" value "+str(value))
+
+     outputColumnNames=["topic","term","lda_weight"]
+
+     return([listOfWordsByTopic,outputColumnNames])
+
 
 
 #######DO NOT CHANGE THIS CODE##################
@@ -76,9 +118,9 @@ def plot1(X, outputDirectory,title="figure"):
     fig.set_size_inches( (DefaultSize[0]*5, DefaultSize[1]*5) )
     ax1 = fig.add_subplot(111)
     ax1.spy(X, precision=1, markersize=0.1, marker=".",aspect="auto")
-    fig.savefig(outputDirectory+"/"+datautils.timeStamped()+title+"_figure.png")
+    fig.savefig(outputDirectory+"/"+du.timeStamped()+title+"_figure.png")
 
-def plot2(X,kmeans,outputDirectory,title="cluster"):
+def plotClusterCentroids(kmeans,outputDirectory,title="Cluster_Centroids"):
     #plt.scatter(kmeans.cluster_centers_[:,0] ,kmeans.cluster_centers_[:,1], color='black')
     fig = figure()
     DefaultSize = fig.get_size_inches()
@@ -86,10 +128,27 @@ def plot2(X,kmeans,outputDirectory,title="cluster"):
     fig.set_size_inches( (DefaultSize[0]*5, DefaultSize[1]*5) )
     ax1 = fig.add_subplot(111)
     ax1.scatter(kmeans.cluster_centers_[:,0] ,kmeans.cluster_centers_[:,1], color='black')
-    fig.savefig(outputDirectory+"/"+datautils.timeStamped()+title+".png")
+    fig.savefig(outputDirectory+"/"+du.timeStamped()+title+".png")
 
 
 
+
+def plot_coo_matrix(m):
+    if not isinstance(m, coo_matrix):
+        m = coo_matrix(m)
+    fig = plt.figure()
+    ax = fig.add_subplot(111, axisbg='black')
+    ax.plot(m.col, m.row, 's', color='white', ms=1)
+    ax.set_xlim(0, m.shape[1])
+    ax.set_ylim(0, m.shape[0])
+    ax.set_aspect('equal')
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    ax.invert_yaxis()
+    ax.set_aspect('equal')
+    ax.set_xticks([])
+    ax.set_yticks([])
+    return ax
 
 
 
@@ -116,7 +175,7 @@ def removeColumnDecision( weight,  threshold=0, otherVariable1=0,otherVariable2=
 
 def filterAndReportResults(kmeans,columnMap, target, outputDirectory,thresholdForColumnRemoval=0.3, thresholdForReporting=0.001):
 
-    logger.debug(kmeans.cluster_centers_)
+    du.getLogger().debug(kmeans.cluster_centers_)
     outputColumnNames = ['Target','Cluster','Weight', 'Term']
 
     #This is the list of analysis results. We will add to it and then save as an Excel Spreadsheet
@@ -124,49 +183,45 @@ def filterAndReportResults(kmeans,columnMap, target, outputDirectory,thresholdFo
     #columnsToRemove
     #This is a set of columns to remove. We will add to this list if our logic tells us to remove the column
     #NOTE a set cannot contain duplicates. This is good. We don't want to remove the same column twice!
-    columnsToRemove = set()
-    logger.debug(" inertia: "+str(kmeans.inertia_))
-    logger.debug(" init: "+str(kmeans.init))
-    logger.debug(" labels_: "+str(kmeans.labels_))
-    logger.debug(" max_iter: "+str(kmeans.max_iter))
-    logger.debug(" params: "+str(kmeans.get_params))
-    logger.debug(" tol: "+str(kmeans.tol))
-    logger.debug(" n_init: "+str(kmeans.n_init))
+    du.getLogger().debug(" K Means Parameter Values:")
+    du.getLogger().debug(" inertia: "+str(kmeans.inertia_))
+    du.getLogger().debug(" init: "+str(kmeans.init))
+    du.getLogger().debug(" labels_: "+str(kmeans.labels_))
+    du.getLogger().debug(" max_iter: "+str(kmeans.max_iter))
+    du.getLogger().debug(" params: "+str(kmeans.get_params))
+    du.getLogger().debug(" tol: "+str(kmeans.tol))
+    du.getLogger().debug(" n_init: "+str(kmeans.n_init))
 
     clusterIdx = 0
     for row in kmeans.cluster_centers_:
         clusterIdx += 1
-        logger.debug("\n------\nCluster\n\n")
+        du.getLogger().debug("\n------\nCluster\n\n")
         colIdx = 1
         for weight in row:
             if weight > thresholdForReporting:
                 #This line simply prints the output to the console
-                logger.debug(str(weight) + " col: "+ str(datautils.getTermByIdx(columnMap,colIdx)))
+                du.getLogger().debug(str(weight) + " col: "+ str(du.getTermByIdx(columnMap,colIdx)))
                 # This adds the information about term and its weighting to a list.
                 # We convert this list to a dataframe at the end of this function and save as excel
                 # In other words we are going to save the results
-                listOfRows.append([target,clusterIdx, weight, datautils.getTermByIdx(columnMap,colIdx)])
-                #Now we decide whether we want to remove the column.
-                shouldWeRemoveTheColumnFromTheDataSet=removeColumnDecision(weight,thresholdForColumnRemoval)
-                #If remove == True, then we will add the name of the column to our list of columns to remove
-                if(shouldWeRemoveTheColumnFromTheDataSet == True):
-                    columnsToRemove.add(datautils.getTermByIdx(columnMap,colIdx))
+                listOfRows.append([target,clusterIdx, weight, du.getTermByIdx(columnMap,colIdx)])
+
+
 
             colIdx += 1
 
-    #Here we convert our list of analyzed results to a dataframe
-    outputDataframe = pd.DataFrame(listOfRows, columns=outputColumnNames)
+    return ([listOfRows,outputColumnNames])
+
+def saveListAsExcel(list,outputDirectory,fileName,outputColumnNames,targeName=""):
+    outputDataframe = pd.DataFrame(list, columns=outputColumnNames)
     # Here we use a python function to convert our dataframe to Excel and then save it
-    writer = ExcelWriter(outputDirectory+"/"+datautils.timeStamped()+target+'_kmeansOutput.xlsx')
-    outputDataframe.to_excel(writer,'kmeansOutput_Sheet1')
-    logger.debug("Saving to "+outputDirectory+"/"+datautils.timeStamped()+'kmeansOutput.xlsx')
+    writer = ExcelWriter(outputDirectory + "/" + du.timeStamped() + targeName +"_"+fileName+ '.xlsx')
+    outputDataframe.to_excel(writer, '_Sheet1')
+    du.getLogger().debug("Saving to " + outputDirectory + "/" + du.timeStamped() + targeName +"_"+fileName+ '.xlsx')
     writer.save()
-    #Finally we return our list of columns that we want to remove from the dataset. You can use this in
-    # another function to actualy remove the columns.
-    return (columnsToRemove)
 
 def subsetByCategory(X,y,targetIn):
-    logger.debug("Original Set\n",X.__len__)
+    du.getLogger().debug("Original Set\n",X.__len__)
     n=0
     rows=list()
     for target in y:
@@ -175,7 +230,7 @@ def subsetByCategory(X,y,targetIn):
         n+=1
     array=np.asarray(rows)
     out=X[array,:]
-    logger.debug("\n\nReturning SubSet\n" + str(out.__len__))
+    du.getLogger().debug("\n\nReturning SubSet\n" + str(out.__len__))
     dataloader.infoX(out)
     return(out)
 
@@ -184,15 +239,15 @@ def subsetByCategory(X,y,targetIn):
 
 def kmeansBySubset(X,y,columnMap,targetMap, clusterCount):
     for target in np.unique(y):
-        targetName=datautils.getTargetByIdx(targetMap,target)
-        logger.debug("\n\nSubset for "+str(targetName))
+        targetName=du.getTargetByIdx(targetMap,target)
+        du.getLogger().debug("\n\nSubset for "+str(targetName))
         subset = subsetByCategory(X,y,target)
         dataloader.infoX(subset)
 
         plot1(subset,targetName)
         kmeansForSubset=doKmeans(subset,clusterCount)
-        filterAndReportResults(kmeansForSubset,columnMap,datautils.getTargetByIdx(targetMap,target),0.03)
-        plot2(subset,kmeansForSubset,targetName)
+        filterAndReportResults(kmeansForSubset,columnMap,du.getTargetByIdx(targetMap,target),0.03)
+        plotClusterCentroids(subset,kmeansForSubset,targetName)
 
 #Converts data to TF_IDF
 def convertToTfIdf(X):
@@ -200,4 +255,3 @@ def convertToTfIdf(X):
      transformedX=transformer.fit_transform(X)
      return(transformedX)
 
-logger=datautils.getLogger()

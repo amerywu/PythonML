@@ -38,9 +38,7 @@ def loadColumnMap(directory,dataFile):
     
     #print("\n\n")
     
-    columnMap['Idx'] = columnMap['Idx'].str.replace('ColumnHeadTuple','')
-    columnMap['Idx'] = columnMap['Idx'].str.replace('\(','')
-    columnMap['Term'] = columnMap['Term'].str.replace('\)','')
+
     columnMap[['Idx']] = columnMap[['Idx']].apply(pd.to_numeric)
     columnMapSorted=columnMap.sort_values('Idx')
     return (columnMapSorted)
@@ -49,8 +47,7 @@ def loadTargetMap(directory,dataFile):
     targetMap = pd.read_csv(directory+"/"+dataFile+'-targetMap.txt',header=None, names=("Target","Idx"))
 
 
-    targetMap['Idx'] = targetMap['Idx'].str.replace('\)','')
-    targetMap['Target'] = targetMap['Target'].str.replace('\(','')
+
     targetMap[['Idx']] = targetMap[['Idx']].apply(pd.to_numeric)
     targetMapSorted=targetMap.sort_values('Idx')
     return(targetMapSorted)
