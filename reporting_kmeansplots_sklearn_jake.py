@@ -1,21 +1,7 @@
 
 from matplotlib.pyplot import figure, show
-
-from sklearn.decomposition import NMF, LatentDirichletAllocation
-import pandas as pd
-
-from pandas import ExcelWriter
-
-from sklearn.feature_extraction.text import TfidfTransformer
-
 from scipy.sparse import coo_matrix
-
-from sklearn.cluster import KMeans
-import numpy as np
 import matplotlib.pyplot as plt
-
-
-import dataloader
 import datautils as du
 
 

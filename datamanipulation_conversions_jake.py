@@ -1,11 +1,7 @@
-from sklearn.datasets import load_svmlight_file
+
 import pandas as pd
-import numpy as np
 import datautils
-import logging
 import gensim
-import os
-import datetime
 import scipy
 from sklearn.feature_extraction.text import TfidfTransformer
 

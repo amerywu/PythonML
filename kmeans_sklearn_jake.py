@@ -1,12 +1,5 @@
 
 
-from matplotlib.pyplot import figure, show
-
-from sklearn.decomposition import NMF, LatentDirichletAllocation
-import pandas as pd
-
-from pandas import ExcelWriter
-
 from sklearn.feature_extraction.text import TfidfTransformer
 import dataprocessing
 import reporting_kmeansplots_sklearn_jake as kmeansplots

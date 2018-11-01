@@ -5,11 +5,7 @@ import logging
 
 import dataloader
 import datautils
-import dataprocessing
-import gensim
-import scipy
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+
 
 import os
 ############################################################

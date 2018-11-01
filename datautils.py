@@ -5,7 +5,6 @@ Created on Sun Sep 23 13:03:39 2018
 @author: jake
 """
 import logging
-import gensim
 import pandas as pd
 import os
 import datetime
