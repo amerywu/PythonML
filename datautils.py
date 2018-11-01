@@ -5,11 +5,11 @@ Created on Sun Sep 23 13:03:39 2018
 @author: jake
 """
 import logging
-
+import gensim
 import pandas as pd
 import os
 import datetime
-from scipy import sparse
+import scipy
 
 
 
@@ -109,7 +109,29 @@ def convertToPandasDataFrame(X, y, colMap):
     
     return(sparseDataFrame)
 
+def convertToGensimCorporaAndDictionary(X,columnMap):
+    dct = gensim.corpora.Dictionary()
 
+    getLogger().info("\n convertToGensimCorporaAndDictionary \n\n")
+
+    cx = scipy.sparse.coo_matrix(X)
+
+    corpora = []
+    doc = []
+    currentRow = 0
+    for i, j, v in zip(cx.row, cx.col, cx.data):
+        if (i > currentRow):
+            print("-> ")
+            corpora.append(doc)
+            doc = []
+            currentRow = i
+        # print("(%d, %d), %s" % (i,j,v))
+        for x in range(0, int(v)):
+            doc.append(getTermByIdx(columnMap, j + 1))
+
+    dct.add_documents(corpora)
+    common_corpus = [dct.doc2bow(text) for text in corpora]
+    return(common_corpus,dct)
 
 
 ## Private method for internal use. No need to worry about this
@@ -135,7 +157,7 @@ def __convertFromPandasDataFrame(pdf):
     
     y= pdf['aaatarget'].tolist()
     del pdf['aaatarget']
-    X=sparse.csr_matrix(pdf.to_coo())
+    X=scipy.sparse.csr_matrix(pdf.to_coo())
     print(datetime.datetime.now())
     pdf['aaatarget'] = y
     return (X, y)

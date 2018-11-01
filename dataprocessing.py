@@ -52,7 +52,7 @@ def doLDA(X,
           learningmethod='online',
           learningoffset=0,
           randomstate=10,
-          verbose=1):
+          verbose=2):
      model = LatentDirichletAllocation(n_components=components,
                                        max_iter=maxiter,
                                        learning_method=learningmethod,
