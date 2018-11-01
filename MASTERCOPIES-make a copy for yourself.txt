@@ -1,3 +1,0 @@
-MASTERCOPIES-make a copy for yourself
-Don't edit these files (unless there is an obvious bug).
-Copy to some place in your computer where only you have access
