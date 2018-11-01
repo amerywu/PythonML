@@ -6,12 +6,9 @@ import logging
 import dataloader
 import datautils
 import dataprocessing
-
-
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
-import os
+import datamanipulation_conversions_jake as conversions
+import kmeans_sklearn_jake as kmeansTools
+import reporting_kmeansplots_sklearn_jake as kmeansplots
 ############################################################
 #              main program starts here
 ############################################################
@@ -45,11 +42,11 @@ columnMap=dataloader.loadColumnMap(dataDirectory,dataFile)
 #the loaded target map
 targetMap=dataloader.loadTargetMap(dataDirectory,dataFile)
 
-dataprocessing.elbow(data_tuple[0],outputDirectory,"elbow",2,8)
+kmeansplots.elbow(data_tuple[0],outputDirectory,"elbow",2,8)
 ###############Run the kmeans and get back a model "kmeanstfidf"
-
-kmeanstfidf=dataprocessing.doKmeans(
-        data_tuple[0],
+X=conversions.convertToTfIdf(data_tuple[0])
+kmeanstfidf=kmeansTools.doKmeans(
+        X,
         clusterCount=10,
         maxIterations=10,
         init="k-means++",
@@ -60,11 +57,11 @@ kmeanstfidf=dataprocessing.doKmeans(
 
 
 logger.info("\n analyze \n\n")
-reportTuple=dataprocessing.filterAndReportResults(kmeanstfidf,columnMap,dataFile,outputDirectory,thresholdForColumnRemoval=0.3, thresholdForReporting=0.05)
+reportTuple=kmeansTools.filterAndReportResults(kmeanstfidf,columnMap,dataFile, thresholdForReporting=0.05)
 dataprocessing.saveListAsExcel(reportTuple[0],outputDirectory,dataFile,reportTuple[1])
 logger.info("Making centroid plot")
 
-dataprocessing.plotClusterCentroids(kmeanstfidf,outputDirectory)
+kmeansplots.plotClusterCentroids(kmeanstfidf,outputDirectory)
 
 
 
@@ -79,5 +76,6 @@ datautils.closeLogger
 
 logging.shutdown()
 
-SystemExit
+
 print("Analysis Complete")
+SystemExit

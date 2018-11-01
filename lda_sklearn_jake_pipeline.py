@@ -58,7 +58,7 @@ ldaModel=dataprocessing.doLDA(data_tuple[0],
                               learningoffset=12,
                               randomstate=10,
                               verbose=1)
-resultsTuple=dataprocessing.filterAndReportResultsLDA(ldaModel,columnMap,outputDirectory,"ALL_TARGETS")
+resultsTuple=dataprocessing.filterAndReportResultsLDA(ldaModel,columnMap,"ALL_TARGETS")
 dataprocessing.saveListAsExcel(resultsTuple[0],outputDirectory,dataFile,resultsTuple[1])
 
 
