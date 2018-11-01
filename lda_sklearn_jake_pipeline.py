@@ -2,7 +2,7 @@
 from IPython import get_ipython
 
 import logging
-
+import lda_sklearn_jake as ldatools
 import dataloader
 import datautils
 import dataprocessing
@@ -51,14 +51,14 @@ targetMap=dataloader.loadTargetMap(dataDirectory,dataFile)
 logger.info("\n analyze \n\n")
 
 
-ldaModel=dataprocessing.doLDA(data_tuple[0],
+ldaModel=ldatools.doLDA(data_tuple[0],
                               components=10,
                               maxiter=10,
                               learningmethod='online',
                               learningoffset=12,
                               randomstate=10,
                               verbose=1)
-resultsTuple=dataprocessing.filterAndReportResultsLDA(ldaModel,columnMap,"ALL_TARGETS")
+resultsTuple=ldatools.filterAndReportResultsLDA(ldaModel,columnMap)
 dataprocessing.saveListAsExcel(resultsTuple[0],outputDirectory,dataFile,resultsTuple[1])
 
 

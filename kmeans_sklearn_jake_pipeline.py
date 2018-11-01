@@ -55,20 +55,12 @@ kmeanstfidf=kmeansTools.doKmeans(
         algorithm = 'auto',
         verbose=1)
 
-
 logger.info("\n analyze \n\n")
 reportTuple=kmeansTools.filterAndReportResults(kmeanstfidf,columnMap,dataFile, thresholdForReporting=0.05)
 dataprocessing.saveListAsExcel(reportTuple[0],outputDirectory,dataFile,reportTuple[1])
 logger.info("Making centroid plot")
 
 kmeansplots.plotClusterCentroids(kmeanstfidf,outputDirectory)
-
-
-
-
-
-
-
 logger.info("Done making centroid plot")
 ######Important, use these lines of code below at the very end of any script that uses logging########
 

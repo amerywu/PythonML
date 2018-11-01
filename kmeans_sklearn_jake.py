@@ -52,7 +52,21 @@ def predict(X, kmeans):
     labels = kmeans.predict(X)
     return labels
 
-def kmeansBySubset(X,y,columnMap,targetMap, clusterCount):
+def kmeansBySubset(X,
+                   y,
+                   columnMap,
+                   targetMap,
+                   outputDirectory,
+                   dataFile,
+                   clusterCount=20,
+                   maxIterations=300,
+                   init="k-means++",
+                   n_init="10",
+                   precompute_distances='auto',
+                   algorithm='auto',
+                   verbose=1,
+                   n_jobs=1,
+                   thresholdForReporting=0.05):
     for target in np.unique(y):
         targetName=du.getTargetByIdx(targetMap,target)
         du.getLogger().debug("\n\nSubset for "+str(targetName))
@@ -60,8 +74,20 @@ def kmeansBySubset(X,y,columnMap,targetMap, clusterCount):
         dataloader.infoX(subset)
 
         kmeansplots.sparsityPlot(subset,targetName)
-        kmeansForSubset=doKmeans(subset,clusterCount)
-        filterAndReportResults(kmeansForSubset,columnMap,du.getTargetByIdx(targetMap,target),0.03)
+
+        kmeansForSubset=doKmeans(subset,
+                                 clusterCount,
+                                 maxIterations,
+                                 init,
+                                 n_init,
+                                 precompute_distances,
+                                 algorithm,
+                                 verbose,
+                                 n_jobs)
+
+        reportTuple = filterAndReportResults(subset, columnMap, dataFile, thresholdForReporting)
+        dataprocessing.saveListAsExcel(reportTuple[0], outputDirectory, dataFile, reportTuple[1])
+
         kmeansplots.plotClusterCentroids(subset,kmeansForSubset,targetName)
 
 def filterAndReportResults(kmeans,columnMap, target,thresholdForReporting=0.001):
