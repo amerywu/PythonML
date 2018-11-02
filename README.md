@@ -55,10 +55,11 @@ IMPORTANT: Start by using the command line (i.e., the black DOS window)!! Trust 
 ### Learning Steps:
 Each tutorial will take 20 minutes. Complete in order.
 
-https://www.atlassian.com/git/tutorials/what-is-version-control
-https://www.atlassian.com/git/tutorials/what-is-git
-http://rogerdudler.github.io/git-guide/
-https://www.atlassian.com/git/tutorials/saving-changes
+- https://www.atlassian.com/git/tutorials/what-is-version-control
+- https://www.atlassian.com/git/tutorials/what-is-git
+- http://rogerdudler.github.io/git-guide/
+- https://www.atlassian.com/git/tutorials/saving-changes
+
 If you want more, choose from here: https://www.atlassian.com/git/tutorials
 
 
