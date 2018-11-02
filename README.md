@@ -3,7 +3,7 @@
 
 ###  File Naming Conventions
 
-I will reorganize the code today. We will all follow the following conventions
+We will all follow the following conventions
 #### IMPORTANT AND REQUIRED:
 
 #### Shared Code
