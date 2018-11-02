@@ -22,7 +22,7 @@ So you may have a file which is:
 - reporting_screeplots_matplotlib_minjeong.py
 - datamanipulation_pandas_hsunfu.py
 
-NOTE: Adding the author name is not conventional. Eventually, we will start merging code. Even now, however, it is OK to use other people's code now. In fact, that's the whole point of git!
+NOTE: Adding the author name is not conventional. Eventually, we will start merging code. Even now, however, it is OK to use other people's code. In fact, that's the whole point of git!
 
 #### Your Pipeline Code
 You will also have pipelines. These are the python files that you actually run with the green triangle button. Often the pipeline is linear code, it does not include functions. Where functions are used, you import them from our other files or from external packages.
@@ -42,11 +42,11 @@ e.g.
 ### Learning Curve
 This will probably take two or three hours to learn....maybe a bit more, maybe less. You don't need to learn everything.
 Learn:
-pull
-add
-commit
-push
-and eventually learn branch
+- pull
+- add
+- commit
+- push
+- and eventually learn branch
 That's it
 
 ### Using Git
