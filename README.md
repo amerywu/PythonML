@@ -12,8 +12,8 @@ The naming convention is:
 **AnalysisType_package_Author.py
 
 e.g.  
-kmeans_sklearn_jake.py
-lda_gensim_jerry.py
+- kmeans_sklearn_jake.py
+- lda_gensim_jerry.py
 
 If code is not analysis then it is either reporting/visualization, datamanipulation, or other.
 So you may have a file which is:
