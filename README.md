@@ -7,8 +7,9 @@ I will reorganize the code today. We will all follow the following conventions
 #### IMPORTANT AND REQUIRED:
 
 #### Shared Code
-
-File naming: AnalysisType_package_Author.py
+Shared code are files containing functions we may all use.
+The naming convention is:
+**AnalysisType_package_Author.py
 
 e.g.  
 kmeans_sklearn_jake.py
