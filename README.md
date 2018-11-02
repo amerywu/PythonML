@@ -9,7 +9,8 @@ I will reorganize the code today. We will all follow the following conventions
 #### Shared Code
 Shared code are files containing functions we may all use.
 The naming convention is:
-**AnalysisType_package_Author.py
+
+- AnalysisType_package_Author.py
 
 e.g.  
 - kmeans_sklearn_jake.py
@@ -18,12 +19,21 @@ e.g.
 If code is not analysis then it is either reporting/visualization, datamanipulation, or other.
 So you may have a file which is:
 
-reporting_screeplots_matplotlib_minjeong.py
-datamanipulation_pandas_hsunfu.py
+- reporting_screeplots_matplotlib_minjeong.py
+- datamanipulation_pandas_hsunfu.py
 
 NOTE: Adding the author name is not conventional. Eventually, we will start merging code. Even now, however, it is OK to use other people's code now. In fact, that's the whole point of git!
 
-Trust me. After a day or two, you will see why this is totally worthwhile.....just as our move to Python was worthwhile.
+#### Your Pipeline Code
+You will also have pipelines. These are the python files that you actually run with the green triangle button. Often the pipeline is linear code, it does not include functions. Where functions are used, you import them from our other files or from external packages.
+
+The naming convention is:
+- AnalysisType_package_Author_pipeline.py
+
+e.g.  
+- kmeans_sklearn_jake_pipeline.py
+
+
 
 ### Reasons for GitHub:
 1. Version control and naming conventions  are universal standard professional practice. It's an important little tool for your toolkit.
