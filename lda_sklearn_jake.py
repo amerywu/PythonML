@@ -64,7 +64,7 @@ def gridSearch(X,
                  fit_params=None,
                  iid=True,
                  n_jobs=1,
-                 param_grid={search_params},
+                 param_grid=search_params,
                  pre_dispatch='2*n_jobs',
                  refit=True,
                  return_train_score='warn',
@@ -73,12 +73,12 @@ def gridSearch(X,
 
     # setting learning_decay=0
 
-    model = GridSearchCV(lda, param_grid=search_params)
-    model.fit(X)
+    gridSearchModel = GridSearchCV(lda, param_grid=search_params)
+    gridSearchModel.fit(X)
 
     # best result from grid search
-    best_lda_model = model.best_estimator_
-    return best_lda_model
+    best_lda_model = gridSearchModel.best_estimator_
+    return ([best_lda_model, gridSearchModel])
 
 def doLDA(X,
           components=10,
@@ -125,7 +125,8 @@ def reportResults1(best_lda_model,X,y,columnMap,n_top_words = 10):
     lda_output = best_lda_model.transform(X)
     topicnames = ["Topic" + str(i) for i in range(best_lda_model.n_components)]
     docnames = ["Doc" + str(i) for i in range(len(y))]
-
+    du.getLogger().debug(topicnames)
+    du.getLogger().debug(docnames)
     import numpy as np
     import pandas as pd
     df_document_topic = pd.DataFrame(np.round(lda_output, 2), columns=topicnames, index=docnames)
@@ -147,27 +148,27 @@ def reportResults1(best_lda_model,X,y,columnMap,n_top_words = 10):
     # showing topics with words, but witout weights
     def display_topics(model, feature_names, no_top_words):
         for topic_idx, topic in enumerate(model.components_):
-            du.getLogger.debug("Topic %d:" % (topic_idx))
-            du.getLogger.debug(" ".join([feature_names[i]
+            du.getLogger().debug("Topic %d:" % (topic_idx))
+            du.getLogger().debug(" ".join([feature_names[i]
                             for i in topic.argsort()[:-no_top_words - 1:-1]]))
 
-    du.getLogger.debug("LDA Model:")
+    du.getLogger().debug("LDA Model:")
     display_topics(best_lda_model, columnMap['Term'], 20)
-    du.getLogger.debug("=" * 40)
+    du.getLogger().debug("=" * 40)
 
     # showing topics with words and weights in tuples
     # https://nlpforhackers.io/topic-modeling/
 
 
 
-    du.getLogger.debug("LDA Model:")
+    du.getLogger().debug("LDA Model:")
     print_topics(best_lda_model, columnMap['Term'],n_top_words)
-    du.getLogger.debug("=" * 40)
+    du.getLogger().debug("=" * 40)
 
 
 def print_topics(model, feature_names, n_top_words=10):
     for idx, topic in enumerate(model.components_):
-        du.getLogger.debug("Topic %d:" % (idx))
-        du.getLogger.debug([(feature_names[i], round(topic[i], 2))
+        du.getLogger().debug("Topic %d:" % (idx))
+        du.getLogger().debug([(feature_names[i], round(topic[i], 2))
             for i in topic.argsort()[:-n_top_words - 1:-1]])
 

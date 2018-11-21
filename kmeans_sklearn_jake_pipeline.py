@@ -15,9 +15,9 @@ import reporting_kmeansplots_sklearn_jake as kmeansplots
 
 # Set the important variables for data folder, data name, output folder
 #dataDirectory="C:/Users/jake/Dropbox/Big Data Career/Data/tinysample"
-dataDirectory="Z:/Dropbox/Big Data Career/Data/jd_bydocument/tfidf-2018-10-12_195000_by_45000"
+dataDirectory="Z:/Dropbox/Big Data Career/Data/jd_bydocument/freq-2018-11-01_300000_by_55000_95Percentile"
 #dataFile="fjd201808bysentence_merged"
-dataFile="fjd201808byjob_tfidf_visual arts"
+dataFile="fjd201810byjob_subset_life sciences95"
 outputDirectory="C:/users/jake/Desktop/outputFolder/"
 timestamp=datautils.timeStamped()
 datautils.createDirectory(outputDirectory)
@@ -62,7 +62,7 @@ logger.info("Making centroid plot")
 
 kmeansplots.plotClusterCentroids(kmeanstfidf,outputDirectory)
 logger.info("Done making centroid plot")
-######Important, use these lines of code below at the very end of any script that uses logging########
+###### Important, use these lines of code below at the very end of any script that uses logging ########
 
 datautils.closeLogger
 
